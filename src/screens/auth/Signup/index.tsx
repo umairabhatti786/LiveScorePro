@@ -18,21 +18,16 @@ import { images } from "../../../assets/images";
 import { Spacer } from "../../../components/Spacer";
 import CustomButton from "../../../components/CustomButton";
 import { colors } from "../../../utils/colors";
-import CustomText from "../../../components/CustomText";
-import CustomTextInput from "../../../components/CustomTextInput";
 import { scale, verticalScale } from "react-native-size-matters";
 import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
 import { windowHeight, windowWidth } from "../../../utils/Dimensions";
 import NewText from "../../../components/NewText";
 import Input from "../../../components/Input";
-import ErrorToast from "../../../components/ErrorToast";
-import CustomToast from "../../../components/CustomToast";
 import { emailRegex } from "../../../utils/Regex";
 import Button from "../../../components/Button";
 import { SignupForm } from "./SignupForm";
 import Loader from "../../../components/Loader";
 import { UserSignup } from "../../../api/ApiServices";
-import OneSignal from "react-native-onesignal";
 
 const Signup = () => {
   const navigation: any = useNavigation();
@@ -47,11 +42,7 @@ const Signup = () => {
   //   getDeviceId();
   // }, []);
 
-  const getDeviceId = async () => {
-    let deviceState = await OneSignal.getDeviceState();
-    console.log("devchc", deviceState?.userId);
-    setDeviceId(deviceState?.userId);
-  };
+ 
   const [values, setValues] = useState({
     email: "",
     confirmEmail: "",
@@ -60,7 +51,6 @@ const Signup = () => {
 
   const OnSignup = async () => {
     const viladResponse = SignupForm(values, setShowError, setError);
-    let deviceState = await OneSignal.getDeviceState();
 
 
     if (viladResponse) {
@@ -310,14 +300,7 @@ const Signup = () => {
         </SafeAreaView>
       </KeyboardAwareScrollView>
 
-      {showError && (
-        <CustomToast
-          showError={showError}
-          setShowError={setShowError}
-          text={error}
-          bgColor={toastColor}
-        />
-      )}
+      
     </>
   );
 };

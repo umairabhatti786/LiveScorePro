@@ -8,14 +8,8 @@ import {
   View,
 } from "react-native";
 
-import { images } from "../../assets/images";
-import HomeScreen from "../../screens/main/HomeScreen";
-import SearchScreen from "../../screens/main/SearchScreen";
-import MessageScreen from "../../screens/main/MessageScreen";
-import ProfileScreen from "../../screens/main/ProfileScreen";
+import { images } from "../../assets/images";;
 import { colors } from "../../utils/colors";
-import SearchStack from "../SearchStack";
-import AddStatus from "../../screens/main/AddStatus";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {
@@ -23,22 +17,16 @@ import {
   setDisableBottomTab,
   setProfileActiveBar,
 } from "../../redux/reducers/authReducer";
-import NewMessage from "../../screens/main/NewMessage";
 import { useNavigation } from "@react-navigation/native";
-import ChannelScreen from "../../screens/main/ChannelScreen";
-import ProfileStack from "../ProfileStack";
 import { scale, verticalScale, moderateScale } from "react-native-size-matters";
+import Login from "../../screens/auth/Login";
+import Signup from "../../screens/auth/Signup";
+import LostPassword from "../../screens/auth/LostPassword";
+import ResetPassword from "../../screens/auth/ResetPassword";
 
 const BottomTab = ({}: any) => {
   const Bottom = createBottomTabNavigator();
-  const isDisableTab = useSelector((state) => state.auth)?.disableBottomTab;
-  const notificationAlert = useSelector(
-    (state) => state?.auth
-  )?.notificationAlert;
-
-  const dispatch = useDispatch();
-
-  const image = useSelector(getUserData)?.imageUrl;
+;
 
   const navigation = useNavigation();
 
@@ -64,7 +52,7 @@ const BottomTab = ({}: any) => {
           justifyContent: "center",
           alignItems: "center",
           borderTopWidth: -1,
-          display: isDisableTab ? "none" : "flex",
+          display:  "flex",
           // paddingTop: 8,
           height: 48,
           // display: route.name === "Home" ? "none" : "flex",
@@ -86,8 +74,8 @@ const BottomTab = ({}: any) => {
       // }}
     >
       <Bottom.Screen
-        name="HomeScreen"
-        component={HomeScreen}
+        name="Login"
+        component={Login}
         options={{
           headerShown: false,
           tabBarIcon: ({ focused }) => {
@@ -97,13 +85,13 @@ const BottomTab = ({}: any) => {
                   ...style?.itemStyle,
                 }}
               >
-                <Image
+                {/* <Image
                   source={focused ? images.fillhome : images.home}
                   style={{
                     height: focused ? 27 : 20,
                     width: focused ? 27 : 20,
                   }}
-                />
+                /> */}
               </View>
             );
           },
@@ -112,7 +100,7 @@ const BottomTab = ({}: any) => {
 
       <Bottom.Screen
         name="SearchStack"
-        component={SearchStack}
+        component={Signup}
         options={{
           headerShown: false,
           tabBarIcon: ({ focused }) => {
@@ -124,10 +112,10 @@ const BottomTab = ({}: any) => {
                   paddingTop: 22,
                 }}
               >
-                <Image
+                {/* <Image
                   source={focused ? images.searchfill : images.search}
                   style={{ height: 22, width: 22 }}
-                />
+                /> */}
               </View>
             );
           },
@@ -137,31 +125,24 @@ const BottomTab = ({}: any) => {
         name="ChannelScreen"
         // component={AddStatus}
         // component={ProfileScreen}
-        component={ChannelScreen}
+        component={LostPassword}
         options={{
           headerShown: false,
           tabBarIcon: ({ focused }) => {
             return (
-              <TouchableOpacity
-                onPress={() => {
-                  dispatch(setProfileActiveBar("Channel"));
-                  navigation.navigate("ChannelScreen"); // Navigate to the Profile screen
-
-                  setTimeout(() => {
-                    dispatch(setDisableBottomTab(true));
-                  }, 500);
-                }}
+              <View
+               
                 style={{
                   ...style?.itemStyle,
 
                   paddingTop: 22,
                 }}
               >
-                <Image
+                {/* <Image
                   source={focused ? images.add : images.add}
                   style={{ height: 20, width: 20 }}
-                />
-              </TouchableOpacity>
+                /> */}
+              </View>
             );
           },
         }}
@@ -169,7 +150,7 @@ const BottomTab = ({}: any) => {
 
       <Bottom.Screen
         name="MessageScreen"
-        component={MessageScreen}
+        component={ResetPassword}
         
         options={{
           headerShown: false,
@@ -190,30 +171,24 @@ const BottomTab = ({}: any) => {
                 }}
               >
                 <View>
-                {/* <Dot /> */}
-                  {
-                    notificationAlert&&(
-                      <Dot />
-                      
-                    )
-                  }
+               
                   <Image
                     source={focused ? images.message : images.message}
                     style={{ height: 20, width: 20, tintColor: colors.white }}
                   />
                   {focused && (
-                    <Image
-                      source={images.fillmesssage}
-                      style={{
-                        height: 14,
-                        width: 14,
-                        position: "absolute",
-                        left: 3,
-                        top: 1,
-                        tintColor: colors.white,
-                      }}
-                      resizeMode="contain"
-                    />
+                    // <Image
+                    //   source={images.fillmesssage}
+                    //   style={{
+                    //     height: 14,
+                    //     width: 14,
+                    //     position: "absolute",
+                    //     left: 3,
+                    //     top: 1,
+                    //     tintColor: colors.white,
+                    //   }}
+                    //   resizeMode="contain"
+                    // />
                   )}
                 </View>
               </View>
@@ -223,34 +198,7 @@ const BottomTab = ({}: any) => {
 
         
       />
-      <Bottom.Screen
-        name="ProfileStack"
-        component={ProfileStack}
-        options={{
-          headerShown: false,
-          tabBarIcon: ({ focused }) => {
-            return (
-              <TouchableOpacity
-                onPress={() => {
-                  dispatch(setDisableBottomTab(false));
-                  // dispatch(setProfileActiveBar("Profile"));
-                  navigation.navigate("ProfileStack"); // Navigate to the Profile screen
-                }}
-                style={{
-                  ...style?.itemStyle,
-
-                  paddingTop: 22,
-                }}
-              >
-                <Image
-                  source={{ uri: image }}
-                  style={{ height: 30, width: 30, borderRadius: 999 }}
-                />
-              </TouchableOpacity>
-            );
-          },
-        }}
-      />
+    
     </Bottom.Navigator>
   );
 };

@@ -17,15 +17,10 @@ import { appStyles } from "../../../utils/AppStyles";
 import { useNavigation } from "@react-navigation/native";
 import { images } from "../../../assets/images";
 import { Spacer } from "../../../components/Spacer";
-import CustomButton from "../../../components/CustomButton";
 import { colors } from "../../../utils/colors";
-import CustomText from "../../../components/CustomText";
-import CustomTextInput from "../../../components/CustomTextInput";
-import CheckBox from "../../../components/CheckBox";
 import { scale, verticalScale } from "react-native-size-matters";
 import { windowHeight, windowWidth } from "../../../utils/Dimensions";
 import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
-import CustomToast from "../../../components/CustomToast";
 import {
   ForgotPasswordRequest,
   ResendOtp,
@@ -317,14 +312,6 @@ const ConfirmationCode = ({ route }: props) => {
         </KeyboardAwareScrollView>
       </SafeAreaView>
 
-      {showError && (
-        <CustomToast
-          showError={showError}
-          setShowError={setShowError}
-          text={error}
-          bgColor={toastColor}
-        />
-      )}
     </>
   );
 };

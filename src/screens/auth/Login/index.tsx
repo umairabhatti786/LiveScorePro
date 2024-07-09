@@ -16,10 +16,8 @@ import { appStyles } from "../../../utils/AppStyles";
 import { useNavigation } from "@react-navigation/native";
 import { images } from "../../../assets/images";
 import { Spacer } from "../../../components/Spacer";
-import CustomButton from "../../../components/CustomButton";
 import { colors } from "../../../utils/colors";
 import CustomText from "../../../components/CustomText";
-import CustomTextInput from "../../../components/CustomTextInput";
 import CheckBox from "../../../components/CheckBox";
 import { scale, verticalScale } from "react-native-size-matters";
 import { windowHeight, windowWidth } from "../../../utils/Dimensions";
@@ -28,13 +26,8 @@ import Input from "../../../components/Input";
 import Button from "../../../components/Button";
 import NewText from "../../../components/NewText";
 import { emailRegex } from "../../../utils/Regex";
-import CustomToast from "../../../components/CustomToast";
-import { UserLogin } from "../../../api/ApiServices";
 import Loader from "../../../components/Loader";
 import { useDispatch } from "react-redux";
-import { AUTH, REMEMBER, StorageServices, TOKEN } from "../../../utils/hooks/StorageServices";
-import { setRemember, setToken, setUserData } from "../../../redux/reducers/authReducer";
-import OneSignal from "react-native-onesignal";
 
 const Login = () => {
   const navigation: any = useNavigation();
@@ -51,116 +44,7 @@ const Login = () => {
     password: "",
   });
 
-  const onLogin = async () => {
-    let deviceState = await OneSignal.getDeviceState();
-
-    if (!values?.email) {
-      setError("Email is required");
-      setShowError(true);
-      setTimeout(() => {
-        setShowError(false);
-      }, 4000);
-
-      return;
-    }
-    let isValidEmail = emailRegex?.test(values.email);
-    if (!isValidEmail) {
-      setError("Invalid email address");
-      setShowError(true);
-      setTimeout(() => {
-        setShowError(false);
-      }, 4000);
-
-      return;
-    }
-
-    if (!values?.password) {
-      setError("password is required");
-      setShowError(true);
-      setTimeout(() => {
-        setShowError(false);
-      }, 4000);
-      return;
-    }
-    if (values?.password.length < 6) {
-      setError("password At least 6 characters");
-      setShowError(true);
-      setTimeout(() => {
-        setShowError(false);
-      }, 4000);
-      return;
-    }
-    setLoading(true);
-    const data = {
-      email: values.email,
-      password: values.password,
-      deviceId: deviceState?.userId,
-
-    };
-
-    UserLogin(data, async ({ isSuccess, response }: any) => {
-      if (isSuccess) {
-        let result = JSON.parse(response);
-        console.log("ckdnckdnc", result);
-
-        if (result.status) {
-          setLoading(false);
-          setError(result.msg);
-          setToastColor(colors.green)
-          setShowError(true);
-          setTimeout(() => {
-            setShowError(false);
-            setToastColor(colors.red)
-            StorageServices.setItem(AUTH,result?.user)
-            StorageServices.setItem(TOKEN,result?.token)
-            StorageServices.setItem(REMEMBER,isRemember)
-
-            dispatch(setToken(result?.token))
-            dispatch(setRemember(isRemember))
-
-            dispatch(setUserData(result?.user))
-            navigation.navigate("Tabs", {
-      
-            });
-
-
-            // navigation.navigate("ConfirmationCode", {
-            //   data: { email: values.email },
-            // });
-          }, 2000);
-        } else {
-          if (result.error) {
-            setLoading(false);
-
-            setError(result?.error);
-            setToastColor(colors.red)
-
-            setShowError(true);
-            setTimeout(() => {
-              setShowError(false);
-              setToastColor(colors.red)
-
-            }, 4000);
-          } else {
-            setLoading(false);
-            setError(result?.msg);
-            setToastColor(colors.red)
-
-            setShowError(true);
-            setTimeout(() => {
-              setShowError(false);
-              setToastColor(colors.red)
-
-            }, 4000);
-          }
-        }
-      } else {
-        setLoading(false);
-
-        Alert.alert("Alert!", "Network Error.");
-      }
-    });
-  };
+  
 
   return (
     <>
@@ -258,7 +142,6 @@ const Login = () => {
             <Button
               text="SIGN IN"
               width={"100%"}
-              onPress={onLogin}
               fontWeight={"500"}
               size={18}
               textColor={colors.black}
@@ -314,14 +197,7 @@ const Login = () => {
 
     
 
-      {showError && (
-        <CustomToast
-          showError={showError}
-          setShowError={setShowError}
-          bgColor={toastColor}
-          text={error}
-        />
-      )}
+      
     </>
   );
 };

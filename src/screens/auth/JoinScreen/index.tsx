@@ -16,8 +16,7 @@ import { useNavigation } from "@react-navigation/native";
 import { images } from "../../../assets/images";
 import { Spacer } from "../../../components/Spacer";
 import { colors } from "../../../utils/colors";
-import { windowHeight } from "../../../utils/Dimensions";
-import { windowWidth } from "../../main/HomeScreen/FriendList";
+import { windowHeight, windowWidth } from "../../../utils/Dimensions";
 import { scale, verticalScale } from "react-native-size-matters";
 import Button from "../../../components/Button";
 

@@ -54,54 +54,10 @@ import { Alert } from "react-native";
 
 const AppStack = () => {
   const Stack = createStackNavigator();
-  const [splashState, setSplashState] = useState(true);
-  const user = useSelector(getUserData);
-
-  // const remember=useSelector(getRemember)
-
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    getUserInfo();
-  }, []);
-
-  // console.log("userremeber",   remember);
-
-  const getUserInfo = async () => {
-    const userInfo = await StorageServices.getItem(AUTH);
-    const token = await StorageServices.getItem(TOKEN);
-    // const remeber = await StorageServices.getItem(REMEMBER);
-
-    dispatch(setUserData(userInfo));
-    dispatch(setToken(token));
-  };
-
-  useEffect(() => {
-    OneSignal.setAppId("32945f51-424b-4932-a5cc-f5dc0b54937c");
-    OneSignal.promptForPushNotificationsWithUserResponse();
-    OneSignal.setNotificationWillShowInForegroundHandler(
-      (notificationReceivedEvent: any) => {
-        let notification = notificationReceivedEvent.getNotification();
-        notificationReceivedEvent.complete(notification);
-        console.log("Notighvb",notificationReceivedEvent?.notification?.body)
 
 
-        dispatch(setNotificationAlert(true));
-      }
-    );
-    OneSignal.setNotificationOpenedHandler((notification) => {
-      console.log("OneSignal: notification opened:", notification);
-      // showMessage({
-      //   message: "Notification",
-      //   description: notification?.body,
-      //   type: "info",
-      //   backgroundColor: "#000",
-      //   duration: 5000,
-      //   floating: true,
-      //   icon: (props) => <FastImage source={images.appIcon} {...props} />,
-      // });
-    });
-  }, []);
+
+ 
 
 
 
@@ -120,61 +76,14 @@ const AppStack = () => {
         },
       }}
     >
-      {!user?.email ? (
-        <>
-          <Stack.Screen name={"Join"} component={JoinScreen} />
+
+         <Stack.Screen name={"Join"} component={JoinScreen} />
           <Stack.Screen name={"Login"} component={Login} />
           <Stack.Screen name={"Signup"} component={Signup} />
           <Stack.Screen name={"ProfileSetup"} component={ProfileSetup} />
           <Stack.Screen name={"LostPassword"} component={LostPassword} />
           <Stack.Screen name={"ResetPassword"} component={ResetPassword} />
-
-
-          <Stack.Screen
-            name={"ConfirmationCode"}
-            component={ConfirmationCode}
-          />
-          <Stack.Screen
-            name={"ResetPasswordConfirmation"}
-            component={ResetPasswordConfirmation}
-          />
-        </>
-      ) : (
-        <>
-          <Stack.Screen name={"Tabs"} component={BottomTab} />
-          <Stack.Screen name={"HomeScreen"} component={HomeScreen} />
-          {/* <Stack.Screen name={"NewMessage"} component={NewMessage} /> */}
-
-          {/* <Stack.Screen name={"MessageScreen"} component={MessageScreen} /> */}
-          <Stack.Screen name={"ProfileScreen"} component={ProfileScreen} />
-          <Stack.Screen name={"SearchScreen"} component={SearchScreen} />
-          <Stack.Screen name={"OthersProfile"} component={OthersProfile} />
-          <Stack.Screen name={"ChannelScreen"} component={ChannelScreen} />
-          <Stack.Screen name={"OtherUserChannel"} component={OtherUserChannel} />
-
-
-          <Stack.Screen name={"AddStatus"} component={AddStatus} />
-          <Stack.Screen name={"ChatScreen"} component={Chat} />
-          <Stack.Screen name={"Settings"} component={Settings} />
-          <Stack.Screen name={"Notifications"} component={Notifications} />
-          <Stack.Screen name={"EditGifs"} component={EditGifs} />
-          <Stack.Screen name={"Sent Request"} component={SentRequest} />
-          <Stack.Screen name={"Post"} component={Post} />
-          <Stack.Screen name={"EditProfile"} component={EditProfile} />
-          <Stack.Screen name={"BlockedAccount"} component={BlockedAccount} />
-          <Stack.Screen name={"ChangeEmail"} component={ChangeEmail} />
-          <Stack.Screen name={"ChangePassword"} component={ChangePassword} />
-          <Stack.Screen name={"AccountDeletion"} component={AccountDeletion} />
-          <Stack.Screen name={"SearchMember"} component={SearchMember} />
-          <Stack.Screen name={"NewMessage"} component={NewMessage} />
-          <Stack.Screen name={"LostPassword"} component={LostPassword} />
-          <Stack.Screen name={"ResetPassword"} component={ResetPassword} />
-          <Stack.Screen
-            name={"ResetPasswordConfirmation"}
-            component={ResetPasswordConfirmation}
-          />
-        </>
-      )}
+     
     </Stack.Navigator>
   );
 };

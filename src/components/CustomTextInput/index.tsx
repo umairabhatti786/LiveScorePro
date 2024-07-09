@@ -2,7 +2,6 @@ import { Image, Text, TextInput, TouchableOpacity, View } from "react-native";
 import { colors } from "../../utils/colors";
 import CustomText from "../CustomText";
 import { windowWidth } from "../../utils/Dimensions";
-import DropDownPicker from "react-native-dropdown-picker";
 import { images } from "../../assets/images";
 import { verticalScale } from "react-native-size-matters";
 type Props = {
@@ -140,37 +139,7 @@ const CustomTextInput = ({
           </View>
         )}
         <View style={{ flex: 1 }}>
-          {dropdown ? (
-            <DropDownPicker
-              zIndex={zIndex}
-              style={{
-                width: windowWidth / 1.1,
-                marginTop: 4,
-                alignSelf: "center",
-                backgroundColor: "transparent",
-                borderColor: "transparent",
-              }}
-              dropDownContainerStyle={{
-                width: windowWidth / 1.1,
-                alignSelf: "center",
-                borderColor: colors.black,
-                opacity:1,
-                backgroundColor: colors.primary,
-              }}
-              open={open}
-              
-              disabled={disabled}
-              onOpen={onOpen}
-              onClose={onClose}
-              value={dropdownValue}
-              items={items}
-              setOpen={setOpen}
-              setValue={setDropdownValue}
-              setItems={setItems}
-              textStyle={{ color: colors.white,fontSize:15 }}
-              ArrowDownIconComponent={CustomArrowIcon}
-            />
-          ) : (
+      
             <TextInput
               value={value}
               editable={editable}
@@ -194,7 +163,7 @@ const CustomTextInput = ({
               onBlur={onBlur}
               autoCapitalize="none"
             />
-          )}
+         
         </View>
         {source && (
           <TouchableOpacity

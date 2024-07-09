@@ -1,4 +1,4 @@
-package com.status.updates;
+package com.livescore.pro;
 import android.os.Bundle; // here
 
 import com.facebook.react.ReactActivity;
@@ -22,7 +22,7 @@ public class MainActivity extends ReactActivity {
 
   @Override
   protected String getMainComponentName() {
-    return "Status";
+    return "livescore";
   }
 
   /**

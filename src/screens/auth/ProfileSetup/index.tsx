@@ -29,7 +29,6 @@ import Button from "../../../components/Button";
 import ImagePicker from "react-native-image-crop-picker";
 import { openSettings } from "react-native-permissions";
 import { usePermissions } from "../../../utils/Permissions";
-import CustomToast from "../../../components/CustomToast";
 import Loader from "../../../components/Loader";
 import { UserProfileSetup } from "../../../api/ApiServices";
 import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
@@ -422,14 +421,6 @@ const ProfileSetup = ({ route }: props) => {
    
 
 
-      {showError && (
-        <CustomToast
-          showError={showError}
-          setShowError={setShowError}
-          bgColor={toastColor}
-          text={error}
-        />
-      )}
     </>
   );
 };

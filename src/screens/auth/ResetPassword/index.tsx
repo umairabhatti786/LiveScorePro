@@ -22,7 +22,6 @@ import CustomText from "../../../components/CustomText";
 import CustomTextInput from "../../../components/CustomTextInput";
 import CheckBox from "../../../components/CheckBox";
 import { scale, verticalScale } from "react-native-size-matters";
-import CustomToast from "../../../components/CustomToast";
 import Loader from "../../../components/Loader";
 import { ResetPasswordRequest } from "../../../api/ApiServices";
 import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
@@ -245,14 +244,7 @@ const ResetPassword = ({ route }: props) => {
       </KeyboardAwareScrollView>
     
 
-      {showError && (
-        <CustomToast
-          showError={showError}
-          setShowError={setShowError}
-          bgColor={toastColor}
-          text={error}
-        />
-      )}
+      
     </>
   );
 };

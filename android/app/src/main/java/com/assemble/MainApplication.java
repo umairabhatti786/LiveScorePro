@@ -1,4 +1,4 @@
-package com.status.updates;
+package com.livescore.pro;
 
 import android.app.Application;
 import com.facebook.react.PackageList;

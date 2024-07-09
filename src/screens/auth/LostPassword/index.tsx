@@ -23,7 +23,6 @@ import CustomTextInput from "../../../components/CustomTextInput";
 import { scale, verticalScale } from "react-native-size-matters";
 import { windowHeight, windowWidth } from "../../../utils/Dimensions";
 import { emailRegex } from "../../../utils/Regex";
-import CustomToast from "../../../components/CustomToast";
 import Loader from "../../../components/Loader";
 import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
 import { ForgotPasswordRequest } from "../../../api/ApiServices";
@@ -224,14 +223,7 @@ const LostPassword = () => {
         </SafeAreaView>
       </KeyboardAwareScrollView>
 
-      {showError && (
-        <CustomToast
-          showError={showError}
-          setShowError={setShowError}
-          bgColor={toastColor}
-          text={error}
-        />
-      )}
+     
     </>
   );
 };
