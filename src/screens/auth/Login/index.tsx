@@ -28,177 +28,157 @@ import NewText from "../../../components/NewText";
 import { emailRegex } from "../../../utils/Regex";
 import Loader from "../../../components/Loader";
 import { useDispatch } from "react-redux";
+import CustomTextInput from "../../../components/CustomTextInput";
+import CustomButton from "../../../components/CustomButton";
+import CustomLine from "../../../components/CustomLine";
 
 const Login = () => {
   const navigation: any = useNavigation();
   const [isRemember, setIsRemember] = useState(true);
   const [showPassword, setShowPAssword] = useState(true);
   const [showError, setShowError] = useState(false);
-  const [toastColor,setToastColor]=useState(colors.red)
+  const [toastColor, setToastColor] = useState(colors.red);
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
 
-  const dispatch=useDispatch()
+  const dispatch = useDispatch();
   const [values, setValues] = useState({
     email: "",
     password: "",
   });
 
-  
-
   return (
-    <>
-      {loading && <Loader />}
-      <Image 
-    source={images.lightBackground}
-    style={{
-    position: 'absolute',
-    left: 0,
-    top: 0,
-    width:windowWidth,
-    height:windowHeight,
-  }}
-    />
-        <KeyboardAwareScrollView
-        showsVerticalScrollIndicator={false}
-        style={{ flex: 1, backgroundColor: "transparent"}}
-        // extraScrollHeight={-100}
+    <SafeAreaView
+      style={{
+        flex: 1,
+        backgroundColor: colors.white,
+        paddingHorizontal: scale(20),
+        paddingTop: verticalScale(40),
+      }}
+    >
+      <CustomText
+        text={"SIGN IN WITH "}
+        color={colors.black100}
+        size={22}
+        fontFam="Raleway-Bold"
+        lineHeight={25}
+        fontWeight="700"
+      />
+      <CustomText
+        text={"TO YOUR ACCOUNT"}
+        color={colors.black100}
+        size={22}
+        style={{ marginTop: 2 }}
+        fontFam="Raleway-Bold"
+        lineHeight={25}
+        fontWeight="700"
+      />
+      <Spacer height={verticalScale(25)} />
+
+      <CustomTextInput
+        labelImage={images.user}
+        label="Username"
+        value={values.email}
+        onChangeText={(txt: string) => {
+          setValues({ ...values, email: txt });
+        }}
+        // onShowPassword={() => setShowPAssword(!showPassword)}
+        placeholder="Enter username here"
+        // source={showPassword ? images.eyeclose : images.eye}
+      />
+      <Spacer height={verticalScale(10)} />
+
+      <CustomTextInput
+        labelImage={images.lock}
+        label="Password"
+        isPassword={showPassword}
+        value={values.password}
+        onChangeText={(txt: string) => {
+          setValues({ ...values, password: txt });
+        }}
+        // onShowPassword={() => setShowPAssword(!showPassword)}
+        placeholder="*************"
+        source={images.eyeOff}
+      />
+      <TouchableOpacity
+        style={{ alignSelf: "flex-end", marginVertical: verticalScale(8) }}
       >
-        <SafeAreaView style={{flex:1}}>
-          <View style={{ flex: 1, padding: scale(20) }}>
-            <TouchableOpacity onPress={() => navigation.goBack()}>
-              <Image source={images.back} />
-            </TouchableOpacity>
-            <Spacer height={verticalScale(10)} />
+        <CustomText text={"Forget password?"} color={colors.black} size={12} />
+      </TouchableOpacity>
+      <View style={{ alignItems: "center", width: "100%" }}>
+        <Spacer height={verticalScale(35)} />
+
+        <CustomButton
+          text="LOGIN"
+          width={"90%"}
+          onPress={() => navigation.navigate("Login")}
+          textColor={colors.black}
+          bgColor={colors.primary}
+        />
+        <Spacer height={verticalScale(35)} />
+
+        <View
+          style={{ ...appStyles.row, justifyContent: "space-between", gap: 20 }}
+        >
+          <View
+            style={{ backgroundColor: colors.gray200, flex: 1, height: 1 }}
+          />
+
+          <CustomText text={"OR"} color={colors.black} size={15} />
+          <View
+            style={{ backgroundColor: colors.gray200, flex: 1, height: 1 }}
+          />
+        </View>
+        <Spacer height={verticalScale(35)} />
+
+        <View style={{ ...appStyles.row, gap: scale(15) }}>
+          <TouchableOpacity style={styles.authContainer}>
             <Image
+              source={images.facebook}
               style={{
-                width: windowWidth / 3.5,
-                height: windowHeight / 5.7,
-                alignSelf: "center",
+                width: scale(25),
+                height: scale(25),
               }}
-              source={images.logo}
-              resizeMode="contain"
+              resizeMode={"contain"}
             />
-            {/* <Spacer height={10}/> */}
-            <CustomText
-              text={"Welcome back!"}
-              color={colors.white}
-              size={21}
-              style={{ textAlign: "center" }}
-              fontFam="Poppins-Medium"
-              fontWeight="500"
-            />
-            <Spacer height={10} />
-            <Input
-              label="Email Address"
-              value={values.email}
-              onChangeText={(txt: string) => {
-                setValues({ ...values, email: txt });
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.authContainer}>
+            <Image
+              source={images.google}
+              style={{
+                width: scale(25),
+                height: scale(25),
               }}
-              placeholder="Enter your email address"
+              resizeMode={"contain"}
             />
-
-            {/* <CustomTextInput
-          label="Email Address"
-          placeholder="Enter your login email address"
-        /> */}
-            <Spacer height={7} />
-            <Input
-              label="Password"
-              placeholder="At least 6 characters"
-              isPassword={showPassword}
-              value={values.password}
-              onChangeText={(txt: string) => {
-                setValues({ ...values, password: txt });
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.authContainer}>
+            <Image
+              source={images.apple}
+              style={{
+                width: scale(25),
+                height: scale(25),
               }}
-              onShowPassword={() => setShowPAssword(!showPassword)}
-              source={showPassword ? images.eyeclose : images.eye}
+              resizeMode={"contain"}
             />
-            <Spacer height={verticalScale(10)} />
+          </TouchableOpacity>
+        </View>
 
-            <View style={{...appStyles.rowjustify,paddingVertical:verticalScale(5)}}>
-              <TouchableOpacity
-              activeOpacity={0.6}
-              onPress={()=>setIsRemember(!isRemember)}
-               style={appStyles.row}>
-                <CheckBox
-                  isRemember={isRemember}
-                  setIsRemember={setIsRemember}
-                />
-
-                <Spacer width={scale(7)} />
-                <CustomText
-                  text={"Remember Me"}
-                  color={colors.white}
-                  size={13}
-                  style={{ textAlign: "center" }}
-                  fontFam="Poppins-Medium"
-                  fontWeight="500"
-                />
-              </TouchableOpacity>
-            </View>
-            <Spacer height={verticalScale(10)} />
-
-            <Button
-              text="SIGN IN"
-              width={"100%"}
-              fontWeight={"500"}
-              size={18}
-              textColor={colors.black}
-              bgColor={colors.white}
-            />
-            <Spacer height={verticalScale(25)} />
-
-            <View style={{ height: 1, backgroundColor: colors.white }} />
-            <Spacer height={20} />
-            <View style={{ ...appStyles.row, justifyContent: "center" }}>
-              <NewText
-                text={"Don’t have an account ? "}
-                color={colors.white}
-                size={13}
-                style={{ textAlign: "center" }}
-                fontFam="Poppins-Medium"
-                fontWeight="500"
-              />
-              <TouchableOpacity
-                onPress={() => navigation.navigate("Signup")}
-                activeOpacity={0.6}
-              >
-                <NewText
-                  text={"Sign up"}
-                  color={colors.white}
-                  size={13}
-                  textDecorationLine={"underline"}
-                  style={{ textAlign: "center" }}
-                  fontFam="Poppins-Medium"
-                  fontWeight="500"
-                />
-              </TouchableOpacity>
-            </View>
-
-            <Spacer height={verticalScale(8)} />
-            <TouchableOpacity
-            activeOpacity={0.6}
-            onPress={()=>navigation.navigate("LostPassword")}
-            >
-              <NewText
-                text={"Forgot password?"}
-                color={colors.white}
-                size={13}
-                style={{ textAlign: "center" }}
-                textDecorationLine={"underline"}
-                fontFam="Poppins-Medium"
-                fontWeight="500"
-              />
-            </TouchableOpacity>
-          </View>
-        </SafeAreaView>
-      </KeyboardAwareScrollView>
-
-    
-
-      
-    </>
+        <TouchableOpacity
+          activeOpacity={0.5}
+          style={{ ...appStyles.row, alignSelf: "center", gap: 3,marginTop:verticalScale(15) }}
+        >
+          <CustomText
+            text={"Don’t have account?"}
+            color={colors.gray100}
+            size={13}
+            lineHeight={21}
+            style={{ textAlign: "center" }}
+          />
+          <CustomText text={"Sign up"} color={colors.black} size={13} />
+        </TouchableOpacity>
+      </View>
+    </SafeAreaView>
   );
 };
 
@@ -211,6 +191,14 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     borderWidth: 2,
     borderColor: colors.white,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  authContainer: {
+    width: scale(50),
+    height: scale(50),
+    borderRadius: scale(50),
+    backgroundColor: colors.gray400,
     alignItems: "center",
     justifyContent: "center",
   },

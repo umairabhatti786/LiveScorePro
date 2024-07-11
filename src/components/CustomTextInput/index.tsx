@@ -3,7 +3,7 @@ import { colors } from "../../utils/colors";
 import CustomText from "../CustomText";
 import { windowWidth } from "../../utils/Dimensions";
 import { images } from "../../assets/images";
-import { verticalScale } from "react-native-size-matters";
+import { scale, verticalScale } from "react-native-size-matters";
 type Props = {
   label?: string;
   placeholder?: string;
@@ -44,7 +44,8 @@ type Props = {
   onOpen?: any;
   onClose?: any;
   disabled?: boolean;
-  labelSize?:any
+  labelSize?: any;
+  labelImage?: any;
 };
 
 const CustomTextInput = ({
@@ -88,6 +89,7 @@ const CustomTextInput = ({
   onClose,
   disabled,
   labelSize,
+  labelImage,
 }: Props) => {
   const CustomArrowIcon = () => (
     <View>
@@ -96,14 +98,31 @@ const CustomTextInput = ({
   );
   return (
     <View style={{ ...props, marginTop: marginTop || 15 }}>
-      <View style={{ flexDirection: "row" }}>
+      <View
+        style={{
+          flexDirection: "row",
+          alignItems: "center",
+          gap: scale(7),
+          marginBottom: verticalScale(5),
+        }}
+      >
+        {labelImage && (
+          <Image
+            source={labelImage}
+            style={{
+              width: 18,
+              height: 18,
+            }}
+            resizeMode={"contain"}
+          />
+        )}
+
         <CustomText
           fontWeight={"500"}
           fontFam="Poppins-Medium"
-          size={labelSize|| 13}
-          style={{ marginBottom: verticalScale(5) }}
+          size={labelSize || 14}
           text={label}
-          color={colors.white}
+          color={colors.black}
         />
       </View>
 
@@ -112,11 +131,13 @@ const CustomTextInput = ({
           flexDirection: "row",
           justifyContent: "space-between",
           paddingHorizontal: 10,
-         height: verticalScale(height || 49),
+          height: verticalScale(height || 42),
+          borderColor: colors.gray200,
+          borderWidth: 1,
 
-          alignItems:"center",
-          borderRadius: 10,
-          backgroundColor: colors.primary,
+          alignItems: "center",
+          borderRadius: scale(10),
+          backgroundColor: colors.gray300,
         }}
       >
         {leftSource && (
@@ -138,32 +159,30 @@ const CustomTextInput = ({
             />
           </View>
         )}
-        <View style={{ flex: 1 }}>
-      
-            <TextInput
-              value={value}
-              editable={editable}
-              style={{
-                fontSize: verticalScale(14),
-                width: windowWidth / 1.2,
-                alignItems:"center",
-                // paddingTop:20,
-                fontFamily:"Poppins-Regular",
-                fontWeight: fontWeight,
-                color: color || colors.grey400,
-                ...(isCenter && { alignSelf: "center" }),
-              }}
-              placeholder={placeholder}
-              multiline={multiline}
-              placeholderTextColor={colors.grey400}
-              keyboardType={keyboard}
-              maxLength={maxLength}
-              secureTextEntry={isPassword || false}
-              onChangeText={onChangeText}
-              onBlur={onBlur}
-              autoCapitalize="none"
-            />
-         
+        <View style={{ flex: 1, }}>
+          <TextInput
+            value={value}
+            editable={editable}
+            style={{
+              fontSize: 13,
+              width: windowWidth / 1.2,
+              alignItems: "center",
+              paddingTop:15,
+              fontFamily: "Poppins-Regular",
+              fontWeight: fontWeight,
+              color: color || colors.black,
+              ...(isCenter && { alignSelf: "center" }),
+            }}
+            placeholder={placeholder}
+            multiline={multiline}
+            placeholderTextColor={colors.gray200}
+            keyboardType={keyboard}
+            maxLength={maxLength}
+            secureTextEntry={isPassword || false}
+            onChangeText={onChangeText}
+            onBlur={onBlur}
+            autoCapitalize="none"
+          />
         </View>
         {source && (
           <TouchableOpacity
@@ -175,8 +194,8 @@ const CustomTextInput = ({
             <Image
               source={source}
               style={{
-                width: 22,
-                height: 22,
+                width: 17,
+                height: 17,
               }}
               resizeMode={"contain"}
             />

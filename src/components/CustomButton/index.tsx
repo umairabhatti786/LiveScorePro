@@ -54,12 +54,12 @@ const CustomButton = ({
       style={{
         ...style,
         width: width,
-        height: verticalScale(height||48),
+        height: 45,
         backgroundColor: bgColor || colors.primary,
         justifyContent: "center",
         alignItems: "center",
         paddingHorizontal:paddingHorizontal,
-        borderRadius: scale(borderRadius || 8),
+        borderRadius: scale(borderRadius || 10),
         borderWidth:borderWidth ,
         borderColor: borderColor ,
         // paddingTop:5
@@ -75,8 +75,8 @@ const CustomButton = ({
           text={text}
           color={textColor || colors.white}
           fontWeight={ fontWeight ||"600"}
-          size={size || 15}
-          fontFam={fontFam ||"Poppins-Medium"}
+          size={size || 14}
+          fontFam={fontFam ||"Raleway-Medium"}
         />
       )}
     </TouchableOpacity>

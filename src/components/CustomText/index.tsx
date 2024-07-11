@@ -22,9 +22,9 @@ const CustomText = ({ color, size, fontFam, text, style, lineHeight,numberOfLine
             style={[
                 {
                     color: color || colors.black,
-                    fontSize: verticalScale(size || 10),
+                    fontSize: size || 10,
                     fontWeight: fontWeight ||"500",
-                    fontFamily: fontFam || "Poppins-Regular",
+                    fontFamily: fontFam || "Raleway-Regular",
                     textDecorationLine:textDecorationLine,
                 
                     
