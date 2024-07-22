@@ -110,6 +110,8 @@ const Notification = ({ navigation }: any) => {
           <Circle
             width={37}
             height={37}
+            onPress={()=>navigation.navigate("SettingsScreen")}
+            
             backgroundColor={"#F3F4F5"}
             tintColor={"#292D32"}
             source={images.settings}

@@ -164,6 +164,7 @@ const Premium = ({ navigation }: any) => {
               width={"100%"}
               paddingHorizontal={scale(30)}
               height={50}
+              onPress={()=>navigation.navigate("BottomTab")}
               textColor={colors.black}
               bgColor={colors.primary}
             />

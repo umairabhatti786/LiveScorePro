@@ -60,6 +60,7 @@ const SettingsScreen = ({ navigation }: any) => {
           text={"Settings"}
           color={"#585858"}
           size={24}
+          
           fontFam={font.RalewaySemiBold}
         />
 
@@ -67,6 +68,7 @@ const SettingsScreen = ({ navigation }: any) => {
           <Circle
             width={37}
             height={37}
+            onPress={()=>navigation.navigate("Notification")}
             backgroundColor={"#F3F4F5"}
             tintColor={"#292D32"}
             source={images.notification}

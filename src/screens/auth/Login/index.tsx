@@ -5,6 +5,7 @@ import {
   SafeAreaView,
   Image,
   TouchableOpacity,
+  StatusBar,
 } from "react-native";
 import { appStyles } from "../../../utils/AppStyles";
 import { useNavigation } from "@react-navigation/native";
@@ -36,6 +37,10 @@ const Login = () => {
       style={{ flex: 1, backgroundColor: colors.white }}
       // extraScrollHeight={-100}
     >
+       <StatusBar
+        backgroundColor="#fff"
+        barStyle="dark-content"
+      />
       <SafeAreaView
         style={{
           flex: 1,
@@ -106,7 +111,7 @@ const Login = () => {
           <CustomButton
             text="LOGIN"
             width={"90%"}
-            onPress={() => navigation.navigate("BottomTab")}
+            onPress={() => navigation.navigate("Premium")}
             textColor={colors.black}
             bgColor={colors.primary}
           />

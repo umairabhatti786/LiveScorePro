@@ -17,6 +17,7 @@ import Language from "../../screens/main/Language";
 import Integration from "../../screens/main/Integration";
 import Premium from "../../screens/main/Premium";
 import SettingsScreen from "../../screens/main/SettingsScreen";
+import Notification from "../../screens/main/Notification";
 
 const AppStack = () => {
   const Stack = createStackNavigator();
@@ -56,6 +57,8 @@ const AppStack = () => {
       <Stack.Screen name={"Integration"} component={Integration} />
       <Stack.Screen name={"Premium"} component={Premium} />
       <Stack.Screen name={"SettingsScreen"} component={SettingsScreen} />
+      <Stack.Screen name={"Notification"} component={Notification} />
+
 
 
 

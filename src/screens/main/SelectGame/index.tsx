@@ -151,14 +151,14 @@ const SelectGame = () => {
         <CustomButton
           text="Continue"
           width={"100%"}
-          onPress={() => navigation.navigate("BottomTab")}
+          onPress={() => navigation.navigate("Premium")}
           textColor={colors.black}
           bgColor={colors.primary}
         />
 
         <TouchableOpacity
           activeOpacity={0.5}
-          onPress={() => navigation.navigate("BottomTab")}
+          onPress={() => navigation.navigate("Premium")}
           style={{
             width: "40%",
             height: verticalScale(30),

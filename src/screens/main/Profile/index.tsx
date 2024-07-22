@@ -21,7 +21,7 @@ import { Spacer } from "../../../components/Spacer";
 
 const Profile = ({ navigation }: any) => {
   const profileData = [
-    { name: "Notifications", source: images.notification, onPress: () => {} },
+    { name: "Notifications", source: images.notification, onPress: () => {navigation.navigate("Notification")} },
     { name: "Language", source: images.language, onPress: () => {navigation.navigate("Language")} },
     { name: "Privacy policy", source: images.privacy, onPress: () => {} },
     {
@@ -29,7 +29,7 @@ const Profile = ({ navigation }: any) => {
       source: images.lock,
       onPress: () => {navigation.navigate("Integration")},
     },
-    { name: "Events", source: images.events, onPress: () => {navigation.navigate("Premium")} },
+    { name: "Events", source: images.events, onPress: () => {navigation.navigate("Events")} },
     { name: "News Feeds", source: images.news, onPress: () => {} },
     { name: "Settings", source: images.settings, onPress: () => {navigation.navigate("SettingsScreen")} },
   ];
@@ -51,6 +51,7 @@ const Profile = ({ navigation }: any) => {
           <Circle
             width={40}
             height={40}
+            onPress={()=>navigation.navigate("Notification")}
             backgroundColor={"#F3F4F5"}
             tintColor={"#292D32"}
             source={images.notification}

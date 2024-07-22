@@ -12,7 +12,6 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		1C48A17DAC014FC5822713F1 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E802AA953EB04D2A9487A3D9 /* Poppins-Medium.ttf */; };
-		1E3A50445D5E4C2D964C9057 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95B51A49CF6D44AF94485BD2 /* Poppins-Light.ttf */; };
 		3A6564092FAB49E79CFF9250 /* Raleway-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6B65567B0F7548BC986A2AE7 /* Raleway-Medium.ttf */; };
 		54E8327CFB9F3F8A1143C41A /* libPods-LiveScorePro-LiveScoreProTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C24900F6AF198056508B9935 /* libPods-LiveScorePro-LiveScoreProTests.a */; };
 		66680C9366714679BA5B5694 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E5F3DF87F3E7448EBE69E465 /* Poppins-Bold.ttf */; };
@@ -23,7 +22,6 @@
 		B8C05BF8CAA9419F8F44DB17 /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BFD3EE5E92F64DFBBCBFE1D1 /* Raleway-Regular.ttf */; };
 		B8C1B97BCB4D4199B3AEDEE2 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED66E077028745C88BA73F13 /* Poppins-SemiBold.ttf */; };
 		CABCB5ADBBA84F728C24A60C /* Raleway-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3B11BF4552204B8DA041130B /* Raleway-Black.ttf */; };
-		DC1B4341F0E54797910F6EF9 /* Raleway-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7CDF388D40AA424B89567C3D /* Raleway-Light.ttf */; };
 		ED6E6E00D46039453289147B /* libPods-LiveScorePro.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F55AC02BD4E4B894384AB23E /* libPods-LiveScorePro.a */; };
 /* End PBXBuildFile section */
 
@@ -63,7 +61,6 @@
 		7C8DD4977EBA494A86B194A1 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Regular.ttf"; path = "../src/assets/fonts/Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		7CDF388D40AA424B89567C3D /* Raleway-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-Light.ttf"; path = "../assets/fonts/Raleway-Light.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = LiveScorePro/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		95B51A49CF6D44AF94485BD2 /* Poppins-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Light.ttf"; path = "../src/assets/fonts/Poppins-Light.ttf"; sourceTree = "<group>"; };
 		9E8FDAED4DF44DD2B057FCBC /* Poppins-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Regular.ttf"; path = "../src/assets/fonts/Poppins-Regular.ttf"; sourceTree = "<group>"; };
 		BBC7090FD55EC5F1E295457D /* Pods-LiveScorePro-LiveScoreProTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveScorePro-LiveScoreProTests.debug.xcconfig"; path = "Target Support Files/Pods-LiveScorePro-LiveScoreProTests/Pods-LiveScorePro-LiveScoreProTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BCCD9C9040E0CF7A7171F5E0 /* Pods-LiveScorePro-LiveScoreProTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveScorePro-LiveScoreProTests.release.xcconfig"; path = "Target Support Files/Pods-LiveScorePro-LiveScoreProTests/Pods-LiveScorePro-LiveScoreProTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -189,7 +186,6 @@
 			isa = PBXGroup;
 			children = (
 				E5F3DF87F3E7448EBE69E465 /* Poppins-Bold.ttf */,
-				95B51A49CF6D44AF94485BD2 /* Poppins-Light.ttf */,
 				E802AA953EB04D2A9487A3D9 /* Poppins-Medium.ttf */,
 				9E8FDAED4DF44DD2B057FCBC /* Poppins-Regular.ttf */,
 				ED66E077028745C88BA73F13 /* Poppins-SemiBold.ttf */,
@@ -313,13 +309,11 @@
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				66680C9366714679BA5B5694 /* Poppins-Bold.ttf in Resources */,
-				1E3A50445D5E4C2D964C9057 /* Poppins-Light.ttf in Resources */,
 				1C48A17DAC014FC5822713F1 /* Poppins-Medium.ttf in Resources */,
 				9A3CC89C55D74680AE23B008 /* Poppins-Regular.ttf in Resources */,
 				B8C1B97BCB4D4199B3AEDEE2 /* Poppins-SemiBold.ttf in Resources */,
 				CABCB5ADBBA84F728C24A60C /* Raleway-Black.ttf in Resources */,
 				99C84D046DF94B17885D607C /* Raleway-Bold.ttf in Resources */,
-				DC1B4341F0E54797910F6EF9 /* Raleway-Light.ttf in Resources */,
 				3A6564092FAB49E79CFF9250 /* Raleway-Medium.ttf in Resources */,
 				B8C05BF8CAA9419F8F44DB17 /* Raleway-Regular.ttf in Resources */,
 				ACF7056A40764750A83744E8 /* Raleway-SemiBold.ttf in Resources */,
@@ -703,7 +697,8 @@
 					"$(inherited)",
 					"-Wl",
 					"-ld_classic",
-					"-Wl -ld_classic ",
+					"-Wl",
+					"-ld_classic",
 				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
@@ -778,7 +773,8 @@
 					"$(inherited)",
 					"-Wl",
 					"-ld_classic",
-					"-Wl -ld_classic ",
+					"-Wl",
+					"-ld_classic",
 				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;

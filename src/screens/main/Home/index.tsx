@@ -71,7 +71,10 @@ const Home = ({ navigation }: any) => {
                         />
                       </TouchableOpacity>
 
-                      <TouchableOpacity style={styles.circleContainer}>
+                      <TouchableOpacity
+                      activeOpacity={0.4}
+                      onPress={()=>navigation.navigate("Notification")}
+                       style={styles.circleContainer}>
                         <View
                           style={{
                             width: "55%",
