@@ -19,6 +19,8 @@ import { colors } from "../../../utils/colors";
 import { scale, verticalScale } from "react-native-size-matters";
 import CustomButton from "../../../components/CustomButton";
 import { appStyles } from "../../../utils/AppStyles";
+import { font } from "../../../utils/font";
+import { Spacer } from "../../../components/Spacer";
 
 
 const GetStarted = () => {
@@ -30,50 +32,57 @@ const GetStarted = () => {
     style={{flex:1,alignItems:"center"}}
     >
         <Image
-        style={{width:"100%",height:windowHeight/1.5}}
+        style={{width:"100%",height:windowHeight/1.6}}
         source={images.footballBackground}
         />
-        <View style={{marginTop:verticalScale(20),gap:verticalScale(10),paddingHorizontal:scale(20)}}>
+        <View style={{marginTop:verticalScale(40),gap:verticalScale(10),paddingHorizontal:scale(30)}}>
         <CustomText
-              text={"YOUR SPORTS HUB LIVE AND HIGHLIGHT!"}
+              text={"YOUR SPORTS HUB LIVE AND HIGHLIGHTS!"}
               color={colors.black100}
-              size={22}
+              size={21}
               style={{ textAlign: "center" }}
-              fontFam="Raleway-Bold"
+              fontFam={font.RalewayBold}
               lineHeight={25}
-              fontWeight="700"
+              fontWeight="bold"
             />
             <CustomText
               text={"Watch sports live or highlights, read every news from your smartphone"}
               color={colors.gray100}
               size={13}
               lineHeight={21}
+              fontFam={font.poppinsRegular}
               style={{ textAlign: "center" }}
             />
+            <Spacer height={verticalScale(5)}/>
 
 <CustomButton
               text="Get Started"
-            //   width={"100%"}
               onPress={()=>navigation.navigate("Login")}
               textColor={colors.black}
               bgColor={colors.primary}
             />
+                        {/* <Spacer height={verticalScale(5)}/> */}
+
             
             <TouchableOpacity
             activeOpacity={0.5}
+            onPress={()=>navigation.navigate("Signup")}
             style={{...appStyles.row,alignSelf:"center",gap:3}}
             >
                  <CustomText
               text={"Don’t have account?"}
               color={colors.gray100}
-              size={13}
+              size={12}
               lineHeight={21}
+              fontFam={font.poppinsRegular}
               style={{ textAlign: "center" }}
             />
                 <CustomText
               text={"Sign up"}
+              fontFam={font.poppinsRegular}
+
               color={colors.black}
-              size={13}
+              size={12}
             />
 
             </TouchableOpacity>

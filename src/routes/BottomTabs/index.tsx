@@ -1,40 +1,22 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import {
-  Image,
-  Platform,
-  Pressable,
-  StyleSheet,
-  TouchableOpacity,
-  View,
-} from "react-native";
-
-import { images } from "../../assets/images";;
+import { Image, Platform, StyleSheet, View } from "react-native";
+import { images } from "../../assets/images";
 import { colors } from "../../utils/colors";
-import { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import {
-  getUserData,
-  setDisableBottomTab,
-  setProfileActiveBar,
-} from "../../redux/reducers/authReducer";
 import { useNavigation } from "@react-navigation/native";
 import { scale, verticalScale, moderateScale } from "react-native-size-matters";
-import Login from "../../screens/auth/Login";
-import Signup from "../../screens/auth/Signup";
-import LostPassword from "../../screens/auth/LostPassword";
-import ResetPassword from "../../screens/auth/ResetPassword";
+import Home from "../../screens/main/Home";
+import News from "../../screens/main/News";
+import Notification from "../../screens/main/Notification";
+import Events from "../../screens/main/Events";
+import CustomText from "../../components/CustomText";
+import Profile from "../../screens/main/Profile";
+import HomeStack from "../HomeStack";
+import NewsStack from "../NewsStack";
+import ProfileStack from "../ProfileStack";
 
 const BottomTab = ({}: any) => {
   const Bottom = createBottomTabNavigator();
-;
-
   const navigation = useNavigation();
-
-  // useEffect()
-
-  const Dot = () => (
-    <View style={style.dot} />
-  );
 
   return (
     <Bottom.Navigator
@@ -48,34 +30,22 @@ const BottomTab = ({}: any) => {
         // tabBarColor: ({focused, size, color}) => {},
         // tabBarStyle:()=>{innerHeight:1000},
         tabBarStyle: {
-          backgroundColor: "black",
+          backgroundColor: colors.white,
           justifyContent: "center",
           alignItems: "center",
+
           borderTopWidth: -1,
-          display:  "flex",
+          display: "flex",
           // paddingTop: 8,
-          height: 48,
-          // display: route.name === "Home" ? "none" : "flex",
+          height: 65,
         },
         headerShown: false,
       })}
-      // screenOptions= {{
-      //   tabBarHideOnKeyboard: true,
-
-      //   tabBarShowLabel: false,
-      //   tabBarStyle: {
-      //     backgroundColor: "black",
-      //     justifyContent: "center",
-      //     alignItems: "center",
-      //     borderTopWidth: -1,
-      //     paddingTop: 8,
-      //     height: 55,
-      //   },
-      // }}
+    
     >
       <Bottom.Screen
-        name="Login"
-        component={Login}
+        name="Home"
+        component={HomeStack}
         options={{
           headerShown: false,
           tabBarIcon: ({ focused }) => {
@@ -85,13 +55,19 @@ const BottomTab = ({}: any) => {
                   ...style?.itemStyle,
                 }}
               >
-                {/* <Image
-                  source={focused ? images.fillhome : images.home}
-                  style={{
-                    height: focused ? 27 : 20,
-                    width: focused ? 27 : 20,
+                <Image
+                  resizeMode="contain"
+                  source={images.home}
+                  style={{...style.img,
+                    tintColor: focused ? colors.black : colors.gray900,
+
                   }}
-                /> */}
+                />
+                <CustomText
+                  text={"Home"}
+                  color={focused ? colors.black :colors.gray900}
+                  size={10}
+                />
               </View>
             );
           },
@@ -99,8 +75,8 @@ const BottomTab = ({}: any) => {
       />
 
       <Bottom.Screen
-        name="SearchStack"
-        component={Signup}
+        name="News"
+        component={NewsStack}
         options={{
           headerShown: false,
           tabBarIcon: ({ focused }) => {
@@ -108,40 +84,52 @@ const BottomTab = ({}: any) => {
               <View
                 style={{
                   ...style?.itemStyle,
-
-                  paddingTop: 22,
                 }}
               >
-                {/* <Image
-                  source={focused ? images.searchfill : images.search}
-                  style={{ height: 22, width: 22 }}
-                /> */}
+                <Image
+                  resizeMode="contain"
+                  source={images.news}
+                  style={{...style.img,
+                    tintColor: focused ? colors.black : colors.gray900,
+
+                  }}
+                />
+                <CustomText
+                  text={"News"}
+                  color={focused ? colors.black :colors.gray900}
+                  size={10}
+                />
               </View>
             );
           },
         }}
       />
       <Bottom.Screen
-        name="ChannelScreen"
-        // component={AddStatus}
-        // component={ProfileScreen}
-        component={LostPassword}
+        name="Notification"
+       
+        component={Notification}
         options={{
           headerShown: false,
           tabBarIcon: ({ focused }) => {
             return (
               <View
-               
                 style={{
                   ...style?.itemStyle,
-
-                  paddingTop: 22,
                 }}
               >
-                {/* <Image
-                  source={focused ? images.add : images.add}
-                  style={{ height: 20, width: 20 }}
-                /> */}
+                <Image
+                  resizeMode="contain"
+                  source={images.notification}
+                  style={{...style.img,
+                    tintColor: focused ? colors.black : colors.gray900,
+
+                  }}
+                />
+                <CustomText
+                  text={"Notification"}
+                  color={focused ? colors.black :colors.gray900}
+                  size={10}
+                />
               </View>
             );
           },
@@ -149,56 +137,67 @@ const BottomTab = ({}: any) => {
       />
 
       <Bottom.Screen
-        name="MessageScreen"
-        component={ResetPassword}
-        
+        name="Events"
+        component={Events}
         options={{
           headerShown: false,
-          // tabBarBadge: () => <Dot />,
 
-          // ...(notificationAlert && {
-          //   tabBarBadge: () => <Dot />,
-          //   // tabBarBadgeStyle: { backgroundColor: colors.sky,width:5,height:5,borderRadius:999 },
-          // }),
-          
           tabBarIcon: ({ focused }) => {
             return (
               <View
                 style={{
                   ...style?.itemStyle,
-
-                  paddingTop: 22,
                 }}
               >
-                <View>
-               
-                  <Image
-                    source={focused ? images.message : images.message}
-                    style={{ height: 20, width: 20, tintColor: colors.white }}
-                  />
-                  {focused && (
-                    // <Image
-                    //   source={images.fillmesssage}
-                    //   style={{
-                    //     height: 14,
-                    //     width: 14,
-                    //     position: "absolute",
-                    //     left: 3,
-                    //     top: 1,
-                    //     tintColor: colors.white,
-                    //   }}
-                    //   resizeMode="contain"
-                    // />
-                  )}
-                </View>
+                <Image
+                  resizeMode="contain"
+                  source={images.events}
+                  style={{...style.img,
+                    tintColor: focused ? colors.black : colors.gray900,
+
+                  }}
+                />
+                <CustomText
+                  text={"Events"}
+                  color={focused ? colors.black :colors.gray900}
+                  size={10}
+                />
               </View>
             );
           },
         }}
-
-        
       />
-    
+       <Bottom.Screen
+        name="Profile"
+        component={ProfileStack}
+        options={{
+          headerShown: false,
+
+          tabBarIcon: ({ focused }) => {
+            return (
+              <View
+                style={{
+                  ...style?.itemStyle,
+                }}
+              >
+                <Image
+                  resizeMode="contain"
+                  source={images.profile}
+                  style={{...style.img,
+                    tintColor: focused ? colors.black : colors.gray900,
+
+                  }}
+                />
+                <CustomText
+                  text={"Profile"}
+                  color={focused ? colors.black :colors.gray900}
+                  size={10}
+                />
+              </View>
+            );
+          },
+        }}
+      />
     </Bottom.Navigator>
   );
 };
@@ -207,7 +206,7 @@ export default BottomTab;
 const style = StyleSheet.create({
   itemStyle: {
     width: "100%",
-    height: Platform.OS === "ios" ? 65 : 75,
+    height: Platform.OS === "ios" ? 65 : 65,
     justifyContent: "center",
     alignItems: "center",
     paddingVertical: 20,
@@ -216,24 +215,9 @@ const style = StyleSheet.create({
   text: {
     color: colors.white,
   },
-  dot: {
-
-    width: scale(7.5),
-    height: scale(7.5),
-    borderRadius: 999,
-    backgroundColor: colors.sky,
-    marginBottom: verticalScale(3),
-    right: scale(-7),
-    top: -4,
-    bottom: verticalScale(9),
-    position: "absolute",
-
-    // position: 'absolute',
-    // top: -5,
-    // right: -5,
-    // width: 10,
-    // height: 10,
-    // borderRadius: 5,
-    // backgroundColor: colors.sky,
-  },
+  img:{
+    height: scale(22),
+    width: scale(22),
+  }
+ 
 });

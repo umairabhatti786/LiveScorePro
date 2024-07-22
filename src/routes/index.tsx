@@ -26,10 +26,7 @@ const RootNavigator = () => {
 
   return (
     <NavigationContainer>
-      <StatusBar
-        backgroundColor="#yourStatusBarColor"
-        barStyle="light-content"
-      />
+     
 
       <Stack.Navigator screenOptions={{ headerShown: false }}>
         <Stack.Screen name="AppStack" component={AppStack} />

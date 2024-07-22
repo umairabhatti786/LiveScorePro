@@ -1,4 +1,4 @@
-import { View, Text, LogBox, TouchableOpacity, Image } from "react-native";
+import { View, Text, LogBox, TouchableOpacity, Image, StatusBar } from "react-native";
 import React from "react";
 import RootNavigator from "./src/routes";
 import { Provider } from "react-redux";
@@ -12,6 +12,7 @@ const App = () => {
   
   return (
     <Provider store={store}>
+
           <RootNavigator />
 
 

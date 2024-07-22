@@ -4,6 +4,7 @@ import CustomText from "../CustomText";
 import { windowWidth } from "../../utils/Dimensions";
 import { images } from "../../assets/images";
 import { scale, verticalScale } from "react-native-size-matters";
+import { font } from "../../utils/font";
 type Props = {
   label?: string;
   placeholder?: string;
@@ -46,6 +47,15 @@ type Props = {
   disabled?: boolean;
   labelSize?: any;
   labelImage?: any;
+  width?:any
+  fontSize?:any
+  placeholderTextColor?:any
+  borderWidth?:any,
+  title?:any,
+  borderRadius?:any,
+  sourceWidth?:any,
+  sourceHeight?:any,
+  backgroundColor?:any,
 };
 
 const CustomTextInput = ({
@@ -60,6 +70,7 @@ const CustomTextInput = ({
   marginTop,
   multiline,
   height,
+  fontSize,
   dropdown,
   open,
   isPhoneField,
@@ -90,54 +101,86 @@ const CustomTextInput = ({
   disabled,
   labelSize,
   labelImage,
+  width,
+  placeholderTextColor,
+  borderWidth,
+  title,
+  borderRadius,
+  sourceWidth,
+  sourceHeight,
+  backgroundColor
 }: Props) => {
-  const CustomArrowIcon = () => (
-    <View>
-      <Image source={images.arrowdown} />
-    </View>
-  );
-  return (
-    <View style={{ ...props, marginTop: marginTop || 15 }}>
-      <View
-        style={{
-          flexDirection: "row",
-          alignItems: "center",
-          gap: scale(7),
-          marginBottom: verticalScale(5),
-        }}
-      >
-        {labelImage && (
-          <Image
-            source={labelImage}
-            style={{
-              width: 18,
-              height: 18,
-            }}
-            resizeMode={"contain"}
-          />
-        )}
 
-        <CustomText
-          fontWeight={"500"}
-          fontFam="Poppins-Medium"
-          size={labelSize || 14}
-          text={label}
-          color={colors.black}
-        />
-      </View>
+  return (
+    <View style={{ ...props, marginTop: marginTop || 15,width: width||"100%" }}>
+      {
+        label&&(
+
+          <View
+          style={{
+            flexDirection: "row",
+            alignItems: "center",
+            gap: scale(7),
+            marginBottom: verticalScale(5),
+          }}
+        >
+          {labelImage && (
+            <Image
+              source={labelImage}
+              style={{
+                width: 18,
+                height: 18,
+              }}
+              resizeMode={"contain"}
+            />
+          )}
+  
+          <CustomText
+            fontWeight={"600"}
+            fontFam={font.poppinsMedium}
+            style={{marginTop:4}}
+            size={labelSize || 14}
+            text={label}
+            color={colors.black}
+          />
+        </View>
+
+        )
+      }
+      <View
+
+      style={{
+       
+        borderColor: colors.gray200,
+        borderWidth:borderWidth || 1,
+
+        borderRadius:borderRadius || scale(10),
+        backgroundColor:backgroundColor|| colors.gray300,
+        paddingTop:title? verticalScale(5):0
+      }}
+      >
+        {
+          title&&(
+            <CustomText
+            style={{marginBottom:verticalScale(-10),marginLeft:scale(13),}}
+            size={labelSize || 11}
+            text={title}
+            color={"#757575"}
+          />
+
+          )
+        }
+      
 
       <View
         style={{
           flexDirection: "row",
           justifyContent: "space-between",
           paddingHorizontal: 10,
-          height: verticalScale(height || 42),
-          borderColor: colors.gray200,
-          borderWidth: 1,
+          // height: verticalScale(height || 42),
 
           alignItems: "center",
           borderRadius: scale(10),
-          backgroundColor: colors.gray300,
         }}
       >
         {leftSource && (
@@ -164,18 +207,19 @@ const CustomTextInput = ({
             value={value}
             editable={editable}
             style={{
-              fontSize: 13,
+              fontSize:fontSize || 14,
               width: windowWidth / 1.2,
               alignItems: "center",
-              paddingTop:15,
-              fontFamily: "Poppins-Regular",
+              // backgroundColor:"red",
+              flex:1,
+              fontFamily: font.poppinsRegular,
               fontWeight: fontWeight,
               color: color || colors.black,
               ...(isCenter && { alignSelf: "center" }),
             }}
             placeholder={placeholder}
             multiline={multiline}
-            placeholderTextColor={colors.gray200}
+            placeholderTextColor={ placeholderTextColor || colors.gray200}
             keyboardType={keyboard}
             maxLength={maxLength}
             secureTextEntry={isPassword || false}
@@ -194,14 +238,19 @@ const CustomTextInput = ({
             <Image
               source={source}
               style={{
-                width: 17,
-                height: 17,
+                width:sourceWidth|| 17,
+                height: sourceHeight||17,
               }}
               resizeMode={"contain"}
             />
           </TouchableOpacity>
         )}
       </View>
+
+      </View>
+    
+
+      
     </View>
   );
 };
