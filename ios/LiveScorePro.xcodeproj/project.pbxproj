@@ -39,7 +39,6 @@
 		00E356EE1AD99517003FC87E /* LiveScoreProTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiveScoreProTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* LiveScoreProTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LiveScoreProTests.m; sourceTree = "<group>"; };
-		01F3711CEAAC41AA831771CA /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-SemiBold.ttf"; path = "../src/assets/fonts/Inter-SemiBold.ttf"; sourceTree = "<group>"; };
 		0288CB6A561640E19F5CA673 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Medium.ttf"; path = "../assets/fonts/Poppins-Medium.ttf"; sourceTree = "<group>"; };
 		044A92BA2B2AF8060059743B /* LiveScorePro.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = LiveScorePro.entitlements; path = LiveScorePro/LiveScorePro.entitlements; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* LiveScorePro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveScorePro.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,7 +51,6 @@
 		2A82CA6975304F5CA9E19A9B /* Raleway-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-Bold.ttf"; path = "../assets/fonts/Raleway-Bold.ttf"; sourceTree = "<group>"; };
 		2C4312022579C40613F099F9 /* Pods-LiveScorePro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveScorePro.debug.xcconfig"; path = "Target Support Files/Pods-LiveScorePro/Pods-LiveScorePro.debug.xcconfig"; sourceTree = "<group>"; };
 		3B11BF4552204B8DA041130B /* Raleway-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-Black.ttf"; path = "../assets/fonts/Raleway-Black.ttf"; sourceTree = "<group>"; };
-		5DF2CFB728024BD48102B498 /* Inter-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-Medium.ttf"; path = "../src/assets/fonts/Inter-Medium.ttf"; sourceTree = "<group>"; };
 		656806AB452841E1B1CB5CF3 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Regular.ttf"; path = "../assets/fonts/Poppins-Regular.ttf"; sourceTree = "<group>"; };
 		672B21E8EEFA6EFE37C2B26C /* Pods-LiveScorePro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveScorePro.release.xcconfig"; path = "Target Support Files/Pods-LiveScorePro/Pods-LiveScorePro.release.xcconfig"; sourceTree = "<group>"; };
 		6731251826FA4E64BE106935 /* Raleway-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-SemiBold.ttf"; path = "../assets/fonts/Raleway-SemiBold.ttf"; sourceTree = "<group>"; };
@@ -67,12 +65,10 @@
 		BFD3EE5E92F64DFBBCBFE1D1 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-Regular.ttf"; path = "../assets/fonts/Raleway-Regular.ttf"; sourceTree = "<group>"; };
 		C24900F6AF198056508B9935 /* libPods-LiveScorePro-LiveScoreProTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LiveScorePro-LiveScoreProTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF015DE5B44F4B98921BE9C3 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Medium.ttf"; path = "../src/assets/fonts/Roboto-Medium.ttf"; sourceTree = "<group>"; };
-		DA4CE72BF13E40BF9FE34780 /* Inter-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-Bold.ttf"; path = "../src/assets/fonts/Inter-Bold.ttf"; sourceTree = "<group>"; };
 		E5F3DF87F3E7448EBE69E465 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Bold.ttf"; path = "../src/assets/fonts/Poppins-Bold.ttf"; sourceTree = "<group>"; };
 		E802AA953EB04D2A9487A3D9 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Medium.ttf"; path = "../src/assets/fonts/Poppins-Medium.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED66E077028745C88BA73F13 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-SemiBold.ttf"; path = "../src/assets/fonts/Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
-		F304467B13C94FF8AFCF811D /* Inter-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-Regular.ttf"; path = "../src/assets/fonts/Inter-Regular.ttf"; sourceTree = "<group>"; };
 		F55AC02BD4E4B894384AB23E /* libPods-LiveScorePro.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LiveScorePro.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F855FF1DE27040FBB840EF6B /* Roboto-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Bold.ttf"; path = "../src/assets/fonts/Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		FED16DE034514322B89CBBBF /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-SemiBold.ttf"; path = "../assets/fonts/Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
@@ -192,10 +188,6 @@
 				F855FF1DE27040FBB840EF6B /* Roboto-Bold.ttf */,
 				CF015DE5B44F4B98921BE9C3 /* Roboto-Medium.ttf */,
 				7C8DD4977EBA494A86B194A1 /* Roboto-Regular.ttf */,
-				DA4CE72BF13E40BF9FE34780 /* Inter-Bold.ttf */,
-				5DF2CFB728024BD48102B498 /* Inter-Medium.ttf */,
-				F304467B13C94FF8AFCF811D /* Inter-Regular.ttf */,
-				01F3711CEAAC41AA831771CA /* Inter-SemiBold.ttf */,
 				3B11BF4552204B8DA041130B /* Raleway-Black.ttf */,
 				2A82CA6975304F5CA9E19A9B /* Raleway-Bold.ttf */,
 				7CDF388D40AA424B89567C3D /* Raleway-Light.ttf */,
@@ -699,6 +691,7 @@
 					"-ld_classic",
 					"-Wl",
 					"-ld_classic",
+					"-Wl -ld_classic ",
 				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
@@ -775,6 +768,7 @@
 					"-ld_classic",
 					"-Wl",
 					"-ld_classic",
+					"-Wl -ld_classic ",
 				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
