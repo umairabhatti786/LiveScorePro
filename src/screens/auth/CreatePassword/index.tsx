@@ -28,7 +28,9 @@ const CreatePassword = () => {
   const dispatch = useDispatch();
   const [values, setValues] = useState({
     email: "info@gmail.com",
-    password:"123456789"
+    password:"123456789",
+    confirmPassword:"123456789"
+
   });
 
   return (
@@ -93,11 +95,11 @@ const CreatePassword = () => {
         borderWidth={-1}
         source={images.eyeOff}
         isPassword={showPassword}
-        value={values.password}
+        value={values.confirmPassword}
         placeholderTextColor={colors.black}
     
         onChangeText={(txt: string) => {
-          setValues({ ...values, password: txt });
+          setValues({ ...values, confirmPassword: txt });
         }}
         placeholder="*****************"
       />

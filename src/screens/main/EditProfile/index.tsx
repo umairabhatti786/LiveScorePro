@@ -101,6 +101,8 @@ const EditProfile = ({ navigation }: any) => {
             title={"Full name"}
             borderWidth={-1}
             fontSize={16}
+            paddingTop={1}
+
             borderRadius={scale(15)}
             value={values.email}
             onChangeText={(txt: string) => {
@@ -114,6 +116,7 @@ const EditProfile = ({ navigation }: any) => {
             title={"Nick name"}
             borderWidth={-1}
             fontSize={16}
+            paddingTop={1}
             borderRadius={scale(15)}
             marginTop={1}
             value={values.nikcname}
@@ -128,6 +131,7 @@ const EditProfile = ({ navigation }: any) => {
             title={"Label"}
             borderWidth={-1}
             fontSize={16}
+            paddingTop={1}
             borderRadius={scale(15)}
             marginTop={1}
             value={values.email}
@@ -241,6 +245,7 @@ const EditProfile = ({ navigation }: any) => {
               source={images.down}
               borderRadius={scale(15)}
               marginTop={1}
+              paddingTop={1}
               sourceHeight={scale(12)}
               sourceWidth={scale(12)}
               value={values.Country}
@@ -256,6 +261,8 @@ const EditProfile = ({ navigation }: any) => {
               borderWidth={-1}
               fontSize={16}
               width={"47%"}
+              paddingTop={1}
+
               borderRadius={scale(15)}
               marginTop={1}
               value={values.Genre}
@@ -273,6 +280,7 @@ const EditProfile = ({ navigation }: any) => {
             fontSize={16}
             borderRadius={scale(15)}
             marginTop={1}
+            paddingTop={1}
             value={values.Address}
             onChangeText={(txt: string) => {
               setValues({ ...values, Address: txt });

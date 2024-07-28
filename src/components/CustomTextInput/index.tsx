@@ -56,6 +56,7 @@ type Props = {
   sourceWidth?:any,
   sourceHeight?:any,
   backgroundColor?:any,
+  paddingTop?:any
 };
 
 const CustomTextInput = ({
@@ -108,7 +109,8 @@ const CustomTextInput = ({
   borderRadius,
   sourceWidth,
   sourceHeight,
-  backgroundColor
+  backgroundColor,
+  paddingTop
 }: Props) => {
 
   return (
@@ -202,7 +204,7 @@ const CustomTextInput = ({
             />
           </View>
         )}
-        <View style={{ flex: 1, }}>
+        <View style={{ flex: 1,paddingTop: paddingTop||verticalScale(5) }}>
           <TextInput
             value={value}
             editable={editable}
@@ -217,6 +219,17 @@ const CustomTextInput = ({
               color: color || colors.black,
               ...(isCenter && { alignSelf: "center" }),
             }}
+            // fontSize: 16,
+            // width:source?windowWidth / 1.3: windowWidth / 1.2,
+            // alignItems:"center",
+            // flex:1,
+            // // paddingTop:20,
+            // fontFamily:"Poppins-Regular",
+            // fontWeight: fontWeight,
+            // color: color || colors.grey400,
+            // ...(isCenter && { alignSelf: "center" }),
+
+
             placeholder={placeholder}
             multiline={multiline}
             placeholderTextColor={ placeholderTextColor || colors.gray200}
