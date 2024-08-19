@@ -105,6 +105,7 @@ const OnBoarding = ({ navigation }: any) => {
             size={21}
             numberOfLines={2}
             lineHeight={27}
+            fontWeight="700"
             fontFam={font.RalewayBold}
             color={colors.black}
             style={styles.titleText}
@@ -148,7 +149,7 @@ const OnBoarding = ({ navigation }: any) => {
   };
 
   return (
-    <SafeAreaView style={styles.container}>
+    <View style={styles.container}>
       <AppIntroSlider
         renderItem={renderItem}
         data={onBoardingData}
@@ -159,10 +160,9 @@ const OnBoarding = ({ navigation }: any) => {
         onSlideChange={onSlideChange}
         activeDotStyle={{ backgroundColor: "transparent" }}
       />
-    </SafeAreaView>
+    </View>
   );
 };
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,

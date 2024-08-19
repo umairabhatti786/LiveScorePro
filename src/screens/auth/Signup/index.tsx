@@ -14,7 +14,6 @@ import { Spacer } from "../../../components/Spacer";
 import { colors } from "../../../utils/colors";
 import CustomText from "../../../components/CustomText";
 import { scale, verticalScale } from "react-native-size-matters";
-import { useDispatch } from "react-redux";
 import CustomTextInput from "../../../components/CustomTextInput";
 import CustomButton from "../../../components/CustomButton";
 import { font } from "../../../utils/font";
@@ -25,7 +24,6 @@ const Signup = () => {
   const [isRemember, setIsRemember] = useState(true);
   const [showPassword, setShowPAssword] = useState(true);
 
-  const dispatch = useDispatch();
   const [values, setValues] = useState({
     name: "Jeff",
     lastName: "Kevin",

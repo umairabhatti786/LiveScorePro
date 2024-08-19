@@ -14,7 +14,6 @@ import { Spacer } from "../../../components/Spacer";
 import { colors } from "../../../utils/colors";
 import CustomText from "../../../components/CustomText";
 import { scale, verticalScale } from "react-native-size-matters";
-import { useDispatch } from "react-redux";
 import CustomTextInput from "../../../components/CustomTextInput";
 import CustomButton from "../../../components/CustomButton";
 import { font } from "../../../utils/font";
@@ -25,7 +24,6 @@ const Login = () => {
   const [isRemember, setIsRemember] = useState(true);
   const [showPassword, setShowPAssword] = useState(true);
 
-  const dispatch = useDispatch();
   const [values, setValues] = useState({
     email: "",
     password: "",
@@ -45,10 +43,20 @@ const Login = () => {
         style={{
           flex: 1,
           backgroundColor: colors.white,
+       
+        }}
+      >
+        <View
+
+        style={{
+          flex:1,
+          backgroundColor:colors.white,
+
           paddingHorizontal: scale(20),
           paddingTop: verticalScale(40),
         }}
-      >
+        >
+
         <CustomText
           text={"SIGN IN WITH "}
           color={colors.black100}
@@ -188,6 +196,9 @@ const Login = () => {
             <CustomText text={"Sign up"} color={colors.black} size={13} />
           </TouchableOpacity>
         </View>
+
+        </View>
+
       </SafeAreaView>
     </KeyboardAwareScrollView>
   );

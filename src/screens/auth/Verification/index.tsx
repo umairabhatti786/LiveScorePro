@@ -13,7 +13,6 @@ import { Spacer } from "../../../components/Spacer";
 import { colors } from "../../../utils/colors";
 import CustomText from "../../../components/CustomText";
 import { scale, verticalScale } from "react-native-size-matters";
-import { useDispatch } from "react-redux";
 import CustomTextInput from "../../../components/CustomTextInput";
 import CustomButton from "../../../components/CustomButton";
 import { font } from "../../../utils/font";
@@ -36,7 +35,6 @@ const Verification = () => {
     setValue,
   });
 
-  const dispatch = useDispatch();
   const [values, setValues] = useState({
     email: "",
     password: "",
@@ -47,10 +45,19 @@ const Verification = () => {
       style={{
         flex: 1,
         backgroundColor: colors.white,
-        paddingHorizontal: scale(20),
-        paddingTop: verticalScale(40),
+     
       }}
     >
+      <View
+        style={{
+          flex: 1,
+          backgroundColor: colors.white,
+          paddingHorizontal: scale(20),
+          paddingTop: verticalScale(40),
+        }}
+      >
+
+ 
       <CustomText
         text={"VERIFICATION"}
         color={colors.black100}
@@ -151,6 +158,7 @@ const Verification = () => {
           textColor={colors.black}
           bgColor={colors.primary}
         />
+      </View>
       </View>
     </SafeAreaView>
   );

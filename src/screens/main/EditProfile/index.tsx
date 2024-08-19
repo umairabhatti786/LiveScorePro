@@ -174,7 +174,7 @@ const EditProfile = ({ navigation }: any) => {
                 <View
               style={{
                 paddingHorizontal: 10,
-                // height: verticalScale(height || 42),
+                height: verticalScale( 42),
 
                 // alignItems: "center",
                 borderRadius: scale(10),
@@ -200,6 +200,8 @@ const EditProfile = ({ navigation }: any) => {
                     width:scale(200),
                     alignItems: "center",
                     marginLeft:scale(-3),
+                    height: verticalScale( 42),
+
                     // backgroundColor:"red",
                     // flex: 1,
                     fontFamily: font.poppinsRegular,

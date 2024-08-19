@@ -27,7 +27,7 @@ end
 
 target 'LiveScorePro' do
   config = use_native_modules!
-  pod 'FirebaseCore', :modular_headers => true
+
   # Flags change depending on the env values.
   flags = get_default_flags()
 
@@ -44,14 +44,6 @@ target 'LiveScorePro' do
     # An absolute path to your application root.
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
-
-  permissions_path = '../node_modules/react-native-permissions/ios'
-
-  # pod 'Google-Maps-iOS-Utils'
-  # pod 'Permission-Camera', :path => "#{permissions_path}/Camera"
-  # pod 'GoogleMaps'
-
-  pod 'GoogleUtilities', :modular_headers => true;
 
   target 'LiveScoreProTests' do
     inherit! :complete

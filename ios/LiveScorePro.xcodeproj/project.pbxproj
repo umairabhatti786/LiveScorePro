@@ -8,21 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* LiveScoreProTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* LiveScoreProTests.m */; };
+		0C80B921A6F3F58F76C31292 /* libPods-LiveScorePro.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-LiveScorePro.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		1C48A17DAC014FC5822713F1 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E802AA953EB04D2A9487A3D9 /* Poppins-Medium.ttf */; };
-		3A6564092FAB49E79CFF9250 /* Raleway-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6B65567B0F7548BC986A2AE7 /* Raleway-Medium.ttf */; };
-		54E8327CFB9F3F8A1143C41A /* libPods-LiveScorePro-LiveScoreProTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C24900F6AF198056508B9935 /* libPods-LiveScorePro-LiveScoreProTests.a */; };
-		66680C9366714679BA5B5694 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E5F3DF87F3E7448EBE69E465 /* Poppins-Bold.ttf */; };
+		7699B88040F8A987B510C191 /* libPods-LiveScorePro-LiveScoreProTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-LiveScorePro-LiveScoreProTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		99C84D046DF94B17885D607C /* Raleway-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A82CA6975304F5CA9E19A9B /* Raleway-Bold.ttf */; };
-		9A3CC89C55D74680AE23B008 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E8FDAED4DF44DD2B057FCBC /* Poppins-Regular.ttf */; };
-		ACF7056A40764750A83744E8 /* Raleway-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6731251826FA4E64BE106935 /* Raleway-SemiBold.ttf */; };
-		B8C05BF8CAA9419F8F44DB17 /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BFD3EE5E92F64DFBBCBFE1D1 /* Raleway-Regular.ttf */; };
-		B8C1B97BCB4D4199B3AEDEE2 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED66E077028745C88BA73F13 /* Poppins-SemiBold.ttf */; };
-		CABCB5ADBBA84F728C24A60C /* Raleway-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3B11BF4552204B8DA041130B /* Raleway-Black.ttf */; };
-		ED6E6E00D46039453289147B /* libPods-LiveScorePro.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F55AC02BD4E4B894384AB23E /* libPods-LiveScorePro.a */; };
+		B3837CEC89A74C00A2978259 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 21EF06D86D0045E9AD7856D6 /* Poppins-Bold.ttf */; };
+		F998E88DCCF140EE9FE49F87 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B975D2348AD44C0EAA494125 /* Poppins-Medium.ttf */; };
+		EFB3F81602E943D3872D0AC0 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5998DB9B02F545859DEABFBC /* Poppins-Regular.ttf */; };
+		6F0CC27BB8B649F08D9DC4CF /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C0F51429867C4A7397E74AE9 /* Poppins-SemiBold.ttf */; };
+		783B482EE7EB4587AE7B3BD8 /* Raleway-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 85D6274B91AF4C4ABEF8D3B1 /* Raleway-Black.ttf */; };
+		5C5606E0ACF049148D43CB32 /* Raleway-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5CF5ECC1A68B45E8958B0056 /* Raleway-Bold.ttf */; };
+		825991C2997C418E840B07CF /* Raleway-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04BABF70E8174A9EA8D854B8 /* Raleway-ExtraBold.ttf */; };
+		91B7E9D45D0B4AA1B0614D8B /* Raleway-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D4926ECBE8D949FCA806FDB3 /* Raleway-Light.ttf */; };
+		6F3293DEA99A42D78E1BA7D3 /* Raleway-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9BA644F6D5514725935E8556 /* Raleway-Medium.ttf */; };
+		703328DA8A4D4D5D805125F6 /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 06D2631CC4044923B9BBC2BB /* Raleway-Regular.ttf */; };
+		00B22A77F7854C96A9A722E4 /* Raleway-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C98A8519BDAB48E888A3CE4E /* Raleway-SemiBold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,39 +41,31 @@
 		00E356EE1AD99517003FC87E /* LiveScoreProTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiveScoreProTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* LiveScoreProTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LiveScoreProTests.m; sourceTree = "<group>"; };
-		0288CB6A561640E19F5CA673 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Medium.ttf"; path = "../assets/fonts/Poppins-Medium.ttf"; sourceTree = "<group>"; };
-		044A92BA2B2AF8060059743B /* LiveScorePro.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = LiveScorePro.entitlements; path = LiveScorePro/LiveScorePro.entitlements; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* LiveScorePro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveScorePro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = LiveScorePro/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = LiveScorePro/AppDelegate.mm; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = LiveScorePro/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = LiveScorePro/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = LiveScorePro/main.m; sourceTree = "<group>"; };
-		1520C2F5F1B1411B8F1000D8 /* Raleway-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-ExtraBold.ttf"; path = "../assets/fonts/Raleway-ExtraBold.ttf"; sourceTree = "<group>"; };
-		2A82CA6975304F5CA9E19A9B /* Raleway-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-Bold.ttf"; path = "../assets/fonts/Raleway-Bold.ttf"; sourceTree = "<group>"; };
-		2C4312022579C40613F099F9 /* Pods-LiveScorePro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveScorePro.debug.xcconfig"; path = "Target Support Files/Pods-LiveScorePro/Pods-LiveScorePro.debug.xcconfig"; sourceTree = "<group>"; };
-		3B11BF4552204B8DA041130B /* Raleway-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-Black.ttf"; path = "../assets/fonts/Raleway-Black.ttf"; sourceTree = "<group>"; };
-		656806AB452841E1B1CB5CF3 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Regular.ttf"; path = "../assets/fonts/Poppins-Regular.ttf"; sourceTree = "<group>"; };
-		672B21E8EEFA6EFE37C2B26C /* Pods-LiveScorePro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveScorePro.release.xcconfig"; path = "Target Support Files/Pods-LiveScorePro/Pods-LiveScorePro.release.xcconfig"; sourceTree = "<group>"; };
-		6731251826FA4E64BE106935 /* Raleway-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-SemiBold.ttf"; path = "../assets/fonts/Raleway-SemiBold.ttf"; sourceTree = "<group>"; };
-		6B65567B0F7548BC986A2AE7 /* Raleway-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-Medium.ttf"; path = "../assets/fonts/Raleway-Medium.ttf"; sourceTree = "<group>"; };
-		6FF905F71AF5401EA8783D73 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Bold.ttf"; path = "../assets/fonts/Poppins-Bold.ttf"; sourceTree = "<group>"; };
-		7C8DD4977EBA494A86B194A1 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Regular.ttf"; path = "../src/assets/fonts/Roboto-Regular.ttf"; sourceTree = "<group>"; };
-		7CDF388D40AA424B89567C3D /* Raleway-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-Light.ttf"; path = "../assets/fonts/Raleway-Light.ttf"; sourceTree = "<group>"; };
+		19F6CBCC0A4E27FBF8BF4A61 /* libPods-LiveScorePro-LiveScoreProTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LiveScorePro-LiveScoreProTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B4392A12AC88292D35C810B /* Pods-LiveScorePro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveScorePro.debug.xcconfig"; path = "Target Support Files/Pods-LiveScorePro/Pods-LiveScorePro.debug.xcconfig"; sourceTree = "<group>"; };
+		5709B34CF0A7D63546082F79 /* Pods-LiveScorePro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveScorePro.release.xcconfig"; path = "Target Support Files/Pods-LiveScorePro/Pods-LiveScorePro.release.xcconfig"; sourceTree = "<group>"; };
+		5B7EB9410499542E8C5724F5 /* Pods-LiveScorePro-LiveScoreProTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveScorePro-LiveScoreProTests.debug.xcconfig"; path = "Target Support Files/Pods-LiveScorePro-LiveScoreProTests/Pods-LiveScorePro-LiveScoreProTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5DCACB8F33CDC322A6C60F78 /* libPods-LiveScorePro.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LiveScorePro.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = LiveScorePro/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		9E8FDAED4DF44DD2B057FCBC /* Poppins-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Regular.ttf"; path = "../src/assets/fonts/Poppins-Regular.ttf"; sourceTree = "<group>"; };
-		BBC7090FD55EC5F1E295457D /* Pods-LiveScorePro-LiveScoreProTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveScorePro-LiveScoreProTests.debug.xcconfig"; path = "Target Support Files/Pods-LiveScorePro-LiveScoreProTests/Pods-LiveScorePro-LiveScoreProTests.debug.xcconfig"; sourceTree = "<group>"; };
-		BCCD9C9040E0CF7A7171F5E0 /* Pods-LiveScorePro-LiveScoreProTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveScorePro-LiveScoreProTests.release.xcconfig"; path = "Target Support Files/Pods-LiveScorePro-LiveScoreProTests/Pods-LiveScorePro-LiveScoreProTests.release.xcconfig"; sourceTree = "<group>"; };
-		BFD3EE5E92F64DFBBCBFE1D1 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-Regular.ttf"; path = "../assets/fonts/Raleway-Regular.ttf"; sourceTree = "<group>"; };
-		C24900F6AF198056508B9935 /* libPods-LiveScorePro-LiveScoreProTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LiveScorePro-LiveScoreProTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CF015DE5B44F4B98921BE9C3 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Medium.ttf"; path = "../src/assets/fonts/Roboto-Medium.ttf"; sourceTree = "<group>"; };
-		E5F3DF87F3E7448EBE69E465 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Bold.ttf"; path = "../src/assets/fonts/Poppins-Bold.ttf"; sourceTree = "<group>"; };
-		E802AA953EB04D2A9487A3D9 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Medium.ttf"; path = "../src/assets/fonts/Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		89C6BE57DB24E9ADA2F236DE /* Pods-LiveScorePro-LiveScoreProTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveScorePro-LiveScoreProTests.release.xcconfig"; path = "Target Support Files/Pods-LiveScorePro-LiveScoreProTests/Pods-LiveScorePro-LiveScoreProTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		ED66E077028745C88BA73F13 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-SemiBold.ttf"; path = "../src/assets/fonts/Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
-		F55AC02BD4E4B894384AB23E /* libPods-LiveScorePro.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LiveScorePro.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F855FF1DE27040FBB840EF6B /* Roboto-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Bold.ttf"; path = "../src/assets/fonts/Roboto-Bold.ttf"; sourceTree = "<group>"; };
-		FED16DE034514322B89CBBBF /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-SemiBold.ttf"; path = "../assets/fonts/Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		21EF06D86D0045E9AD7856D6 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; name = "Poppins-Bold.ttf"; path = "../assets/fonts/Poppins-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B975D2348AD44C0EAA494125 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; name = "Poppins-Medium.ttf"; path = "../assets/fonts/Poppins-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5998DB9B02F545859DEABFBC /* Poppins-Regular.ttf */ = {isa = PBXFileReference; name = "Poppins-Regular.ttf"; path = "../assets/fonts/Poppins-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C0F51429867C4A7397E74AE9 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; name = "Poppins-SemiBold.ttf"; path = "../assets/fonts/Poppins-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		85D6274B91AF4C4ABEF8D3B1 /* Raleway-Black.ttf */ = {isa = PBXFileReference; name = "Raleway-Black.ttf"; path = "../assets/fonts/Raleway-Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5CF5ECC1A68B45E8958B0056 /* Raleway-Bold.ttf */ = {isa = PBXFileReference; name = "Raleway-Bold.ttf"; path = "../assets/fonts/Raleway-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		04BABF70E8174A9EA8D854B8 /* Raleway-ExtraBold.ttf */ = {isa = PBXFileReference; name = "Raleway-ExtraBold.ttf"; path = "../assets/fonts/Raleway-ExtraBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D4926ECBE8D949FCA806FDB3 /* Raleway-Light.ttf */ = {isa = PBXFileReference; name = "Raleway-Light.ttf"; path = "../assets/fonts/Raleway-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9BA644F6D5514725935E8556 /* Raleway-Medium.ttf */ = {isa = PBXFileReference; name = "Raleway-Medium.ttf"; path = "../assets/fonts/Raleway-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		06D2631CC4044923B9BBC2BB /* Raleway-Regular.ttf */ = {isa = PBXFileReference; name = "Raleway-Regular.ttf"; path = "../assets/fonts/Raleway-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C98A8519BDAB48E888A3CE4E /* Raleway-SemiBold.ttf */ = {isa = PBXFileReference; name = "Raleway-SemiBold.ttf"; path = "../assets/fonts/Raleway-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54E8327CFB9F3F8A1143C41A /* libPods-LiveScorePro-LiveScoreProTests.a in Frameworks */,
+				7699B88040F8A987B510C191 /* libPods-LiveScorePro-LiveScoreProTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,7 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED6E6E00D46039453289147B /* libPods-LiveScorePro.a in Frameworks */,
+				0C80B921A6F3F58F76C31292 /* libPods-LiveScorePro.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,7 +108,6 @@
 		13B07FAE1A68108700A75B9A /* LiveScorePro */ = {
 			isa = PBXGroup;
 			children = (
-				044A92BA2B2AF8060059743B /* LiveScorePro.entitlements */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -129,8 +122,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				F55AC02BD4E4B894384AB23E /* libPods-LiveScorePro.a */,
-				C24900F6AF198056508B9935 /* libPods-LiveScorePro-LiveScoreProTests.a */,
+				5DCACB8F33CDC322A6C60F78 /* libPods-LiveScorePro.a */,
+				19F6CBCC0A4E27FBF8BF4A61 /* libPods-LiveScorePro-LiveScoreProTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -151,7 +144,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
-				EA34D464199E4B4BA310B2DB /* Resources */,
+				E0CE289B34BE4FD4A0E35EFC /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -170,38 +163,32 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				2C4312022579C40613F099F9 /* Pods-LiveScorePro.debug.xcconfig */,
-				672B21E8EEFA6EFE37C2B26C /* Pods-LiveScorePro.release.xcconfig */,
-				BBC7090FD55EC5F1E295457D /* Pods-LiveScorePro-LiveScoreProTests.debug.xcconfig */,
-				BCCD9C9040E0CF7A7171F5E0 /* Pods-LiveScorePro-LiveScoreProTests.release.xcconfig */,
+				3B4392A12AC88292D35C810B /* Pods-LiveScorePro.debug.xcconfig */,
+				5709B34CF0A7D63546082F79 /* Pods-LiveScorePro.release.xcconfig */,
+				5B7EB9410499542E8C5724F5 /* Pods-LiveScorePro-LiveScoreProTests.debug.xcconfig */,
+				89C6BE57DB24E9ADA2F236DE /* Pods-LiveScorePro-LiveScoreProTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		EA34D464199E4B4BA310B2DB /* Resources */ = {
-			isa = PBXGroup;
+		E0CE289B34BE4FD4A0E35EFC /* Resources */ = {
+			isa = "PBXGroup";
 			children = (
-				E5F3DF87F3E7448EBE69E465 /* Poppins-Bold.ttf */,
-				E802AA953EB04D2A9487A3D9 /* Poppins-Medium.ttf */,
-				9E8FDAED4DF44DD2B057FCBC /* Poppins-Regular.ttf */,
-				ED66E077028745C88BA73F13 /* Poppins-SemiBold.ttf */,
-				F855FF1DE27040FBB840EF6B /* Roboto-Bold.ttf */,
-				CF015DE5B44F4B98921BE9C3 /* Roboto-Medium.ttf */,
-				7C8DD4977EBA494A86B194A1 /* Roboto-Regular.ttf */,
-				3B11BF4552204B8DA041130B /* Raleway-Black.ttf */,
-				2A82CA6975304F5CA9E19A9B /* Raleway-Bold.ttf */,
-				7CDF388D40AA424B89567C3D /* Raleway-Light.ttf */,
-				6B65567B0F7548BC986A2AE7 /* Raleway-Medium.ttf */,
-				BFD3EE5E92F64DFBBCBFE1D1 /* Raleway-Regular.ttf */,
-				6731251826FA4E64BE106935 /* Raleway-SemiBold.ttf */,
-				6FF905F71AF5401EA8783D73 /* Poppins-Bold.ttf */,
-				0288CB6A561640E19F5CA673 /* Poppins-Medium.ttf */,
-				656806AB452841E1B1CB5CF3 /* Poppins-Regular.ttf */,
-				1520C2F5F1B1411B8F1000D8 /* Raleway-ExtraBold.ttf */,
-				FED16DE034514322B89CBBBF /* Poppins-SemiBold.ttf */,
+				21EF06D86D0045E9AD7856D6 /* Poppins-Bold.ttf */,
+				B975D2348AD44C0EAA494125 /* Poppins-Medium.ttf */,
+				5998DB9B02F545859DEABFBC /* Poppins-Regular.ttf */,
+				C0F51429867C4A7397E74AE9 /* Poppins-SemiBold.ttf */,
+				85D6274B91AF4C4ABEF8D3B1 /* Raleway-Black.ttf */,
+				5CF5ECC1A68B45E8958B0056 /* Raleway-Bold.ttf */,
+				04BABF70E8174A9EA8D854B8 /* Raleway-ExtraBold.ttf */,
+				D4926ECBE8D949FCA806FDB3 /* Raleway-Light.ttf */,
+				9BA644F6D5514725935E8556 /* Raleway-Medium.ttf */,
+				06D2631CC4044923B9BBC2BB /* Raleway-Regular.ttf */,
+				C98A8519BDAB48E888A3CE4E /* Raleway-SemiBold.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -210,12 +197,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "LiveScoreProTests" */;
 			buildPhases = (
-				F7AE789E365A9F97474EE0F8 /* [CP] Check Pods Manifest.lock */,
+				A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				E5F73C6060A5585B27C746C8 /* [CP] Embed Pods Frameworks */,
-				BE40C4B2264D185F441DA7FC /* [CP] Copy Pods Resources */,
+				C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */,
+				F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -231,15 +218,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "LiveScorePro" */;
 			buildPhases = (
-				829047D53C62B70A7C43A294 /* [CP] Check Pods Manifest.lock */,
+				C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				004D6C0984064FE382039BBB /* Upload Debug Symbols to Sentry */,
-				CA4CB0718477AF7871C34619 /* [CP] Embed Pods Frameworks */,
-				06EE87D4F0CF36F789DC3D45 /* [CP] Copy Pods Resources */,
+				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
+				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -300,35 +286,23 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				66680C9366714679BA5B5694 /* Poppins-Bold.ttf in Resources */,
-				1C48A17DAC014FC5822713F1 /* Poppins-Medium.ttf in Resources */,
-				9A3CC89C55D74680AE23B008 /* Poppins-Regular.ttf in Resources */,
-				B8C1B97BCB4D4199B3AEDEE2 /* Poppins-SemiBold.ttf in Resources */,
-				CABCB5ADBBA84F728C24A60C /* Raleway-Black.ttf in Resources */,
-				99C84D046DF94B17885D607C /* Raleway-Bold.ttf in Resources */,
-				3A6564092FAB49E79CFF9250 /* Raleway-Medium.ttf in Resources */,
-				B8C05BF8CAA9419F8F44DB17 /* Raleway-Regular.ttf in Resources */,
-				ACF7056A40764750A83744E8 /* Raleway-SemiBold.ttf in Resources */,
+				B3837CEC89A74C00A2978259 /* Poppins-Bold.ttf in Resources */,
+				F998E88DCCF140EE9FE49F87 /* Poppins-Medium.ttf in Resources */,
+				EFB3F81602E943D3872D0AC0 /* Poppins-Regular.ttf in Resources */,
+				6F0CC27BB8B649F08D9DC4CF /* Poppins-SemiBold.ttf in Resources */,
+				783B482EE7EB4587AE7B3BD8 /* Raleway-Black.ttf in Resources */,
+				5C5606E0ACF049148D43CB32 /* Raleway-Bold.ttf in Resources */,
+				825991C2997C418E840B07CF /* Raleway-ExtraBold.ttf in Resources */,
+				91B7E9D45D0B4AA1B0614D8B /* Raleway-Light.ttf in Resources */,
+				6F3293DEA99A42D78E1BA7D3 /* Raleway-Medium.ttf in Resources */,
+				703328DA8A4D4D5D805125F6 /* Raleway-Regular.ttf in Resources */,
+				00B22A77F7854C96A9A722E4 /* Raleway-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		004D6C0984064FE382039BBB /* Upload Debug Symbols to Sentry */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Upload Debug Symbols to Sentry";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/bin/sh ../node_modules/@sentry/react-native/scripts/sentry-xcode-debug-files.sh";
-		};
 		00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -343,26 +317,48 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT \\\"/bin/sh ../node_modules/@sentry/react-native/scripts/sentry-xcode.sh $REACT_NATIVE_XCODE\\\"\"\n";
+			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		06EE87D4F0CF36F789DC3D45 /* [CP] Copy Pods Resources */ = {
+		00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LiveScorePro/Pods-LiveScorePro-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-LiveScorePro/Pods-LiveScorePro-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LiveScorePro/Pods-LiveScorePro-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-LiveScorePro/Pods-LiveScorePro-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LiveScorePro/Pods-LiveScorePro-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LiveScorePro/Pods-LiveScorePro-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		829047D53C62B70A7C43A294 /* [CP] Check Pods Manifest.lock */ = {
+		A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LiveScorePro-LiveScoreProTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -384,41 +380,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BE40C4B2264D185F441DA7FC /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LiveScorePro-LiveScoreProTests/Pods-LiveScorePro-LiveScoreProTests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LiveScorePro-LiveScoreProTests/Pods-LiveScorePro-LiveScoreProTests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LiveScorePro-LiveScoreProTests/Pods-LiveScorePro-LiveScoreProTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CA4CB0718477AF7871C34619 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LiveScorePro/Pods-LiveScorePro-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LiveScorePro/Pods-LiveScorePro-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LiveScorePro/Pods-LiveScorePro-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E5F73C6060A5585B27C746C8 /* [CP] Embed Pods Frameworks */ = {
+		C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -435,26 +397,38 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LiveScorePro-LiveScoreProTests/Pods-LiveScorePro-LiveScoreProTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F7AE789E365A9F97474EE0F8 /* [CP] Check Pods Manifest.lock */ = {
+		E235C05ADACE081382539298 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LiveScorePro/Pods-LiveScorePro-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-LiveScorePro-LiveScoreProTests-checkManifestLockResult.txt",
+				"${PODS_ROOT}/Target Support Files/Pods-LiveScorePro/Pods-LiveScorePro-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LiveScorePro/Pods-LiveScorePro-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LiveScorePro-LiveScoreProTests/Pods-LiveScorePro-LiveScoreProTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LiveScorePro-LiveScoreProTests/Pods-LiveScorePro-LiveScoreProTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LiveScorePro-LiveScoreProTests/Pods-LiveScorePro-LiveScoreProTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -509,7 +483,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BBC7090FD55EC5F1E295457D /* Pods-LiveScorePro-LiveScoreProTests.debug.xcconfig */;
+			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-LiveScorePro-LiveScoreProTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -536,7 +510,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BCCD9C9040E0CF7A7171F5E0 /* Pods-LiveScorePro-LiveScoreProTests.release.xcconfig */;
+			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-LiveScorePro-LiveScoreProTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -560,16 +534,13 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2C4312022579C40613F099F9 /* Pods-LiveScorePro.debug.xcconfig */;
+			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-LiveScorePro.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = LiveScorePro/LiveScorePro.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = LiveScorePro/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = LiveScorePro;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -580,7 +551,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = assemble;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = LiveScorePro;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -590,15 +561,12 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 672B21E8EEFA6EFE37C2B26C /* Pods-LiveScorePro.release.xcconfig */;
+			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-LiveScorePro.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = LiveScorePro/LiveScorePro.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = LiveScorePro/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = LiveScorePro;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -609,7 +577,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = assemble;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = LiveScorePro;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -689,8 +657,7 @@
 					"$(inherited)",
 					"-Wl",
 					"-ld_classic",
-					"-Wl",
-					"-ld_classic",
+					" ",
 					"-Wl -ld_classic ",
 				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
@@ -766,8 +733,7 @@
 					"$(inherited)",
 					"-Wl",
 					"-ld_classic",
-					"-Wl",
-					"-ld_classic",
+					" ",
 					"-Wl -ld_classic ",
 				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";

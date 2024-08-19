@@ -2,9 +2,6 @@ import React, { useEffect, useState } from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 import Login from "../../screens/auth/Login";
 import Signup from "../../screens/auth/Signup";
-import ProfileSetup from "../../screens/auth/ProfileSetup";
-import LostPassword from "../../screens/auth/LostPassword";
-import ResetPassword from "../../screens/auth/ResetPassword";
 import GetStarted from "../../screens/auth/GetStarted";
 import ForgetPassword from "../../screens/auth/ForgetPassword";
 import Verification from "../../screens/auth/Verification";
@@ -48,9 +45,6 @@ const AppStack = () => {
       
 
       <Stack.Screen name={"Signup"} component={Signup} />
-      <Stack.Screen name={"ProfileSetup"} component={ProfileSetup} />
-      <Stack.Screen name={"LostPassword"} component={LostPassword} />
-      <Stack.Screen name={"ResetPassword"} component={ResetPassword} />
       <Stack.Screen name={"BottomTab"} component={BottomTab} />
       <Stack.Screen name={"UpcommingMatches"} component={UpcommingMatches} />
       <Stack.Screen name={"Language"} component={Language} />

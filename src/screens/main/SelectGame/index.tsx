@@ -14,7 +14,6 @@ import { Spacer } from "../../../components/Spacer";
 import { colors } from "../../../utils/colors";
 import CustomText from "../../../components/CustomText";
 import { scale, verticalScale } from "react-native-size-matters";
-import { useDispatch } from "react-redux";
 import CustomTextInput from "../../../components/CustomTextInput";
 import CustomButton from "../../../components/CustomButton";
 import { font } from "../../../utils/font";
@@ -23,7 +22,6 @@ const SelectGame = () => {
   const navigation: any = useNavigation();
   const [showPassword, setShowPAssword] = useState(true);
 
-  const dispatch = useDispatch();
   const [values, setValues] = useState({
     email: "info@gmail.com",
     password: "123456789",
@@ -67,10 +65,20 @@ const SelectGame = () => {
       style={{
         flex: 1,
         backgroundColor: colors.white,
-        paddingHorizontal: scale(20),
-        paddingTop: verticalScale(40),
+      
       }}
     >
+      <View
+          style={{
+            flex: 1,
+            backgroundColor: colors.white,
+            paddingHorizontal: scale(20),
+            paddingTop: verticalScale(40),
+          }}
+      >
+
+
+
       <CustomText
         text={"What sport do you"}
         color={colors.black100}
@@ -176,6 +184,7 @@ const SelectGame = () => {
             //   style={styles.descriptionText}
           />
         </TouchableOpacity>
+      </View>
       </View>
     </SafeAreaView>
   );

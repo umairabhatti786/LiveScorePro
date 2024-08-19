@@ -179,7 +179,7 @@ const CustomTextInput = ({
           flexDirection: "row",
           justifyContent: "space-between",
           paddingHorizontal: 10,
-          // height: verticalScale(height || 42),
+          height: verticalScale(height || 42),
 
           alignItems: "center",
           borderRadius: scale(10),

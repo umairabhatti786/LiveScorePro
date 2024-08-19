@@ -4,12 +4,9 @@ import { images } from "../../assets/images";
 import { colors } from "../../utils/colors";
 import { useNavigation } from "@react-navigation/native";
 import { scale, verticalScale, moderateScale } from "react-native-size-matters";
-import Home from "../../screens/main/Home";
-import News from "../../screens/main/News";
 import Notification from "../../screens/main/Notification";
 import Events from "../../screens/main/Events";
 import CustomText from "../../components/CustomText";
-import Profile from "../../screens/main/Profile";
 import HomeStack from "../HomeStack";
 import NewsStack from "../NewsStack";
 import ProfileStack from "../ProfileStack";
@@ -37,7 +34,7 @@ const BottomTab = ({}: any) => {
           borderTopWidth: -1,
           display: "flex",
           // paddingTop: 8,
-          height: 65,
+          height: verticalScale(70),
         },
         headerShown: false,
       })}
